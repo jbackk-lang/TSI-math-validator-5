@@ -1,0 +1,8 @@
+*
+!.gitignore
+!*.md
+!docs/
+docs/*
+!docs/*.md
+!docs/POMIARY.json
+!docs/DASHBOARD.png

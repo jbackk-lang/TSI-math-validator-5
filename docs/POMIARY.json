@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "documentation_updated": "2026-10-16",
+  "scope": "Synthetic fixed80 benchmark, previously evaluated for other candidates. Five Polish intents; expression and bounds supplied separately. No universal/real-user/single-use holdout claim.",
+  "final": {
+    "before_original": 68,
+    "before_previous": 71,
+    "after": 72,
+    "n": 80,
+    "lost": 0
+  },
+  "retention": {
+    "after": 240,
+    "n": 240,
+    "lost": 0
+  },
+  "execution": {
+    "passed": 10,
+    "n": 10
+  },
+  "additional_gained_execution": {
+    "passed": 1,
+    "n": 1
+  },
+  "per_class": {
+    "solve": {
+      "correct": 15,
+      "n": 16
+    },
+    "solve_plot": {
+      "correct": 15,
+      "n": 16
+    },
+    "plot": {
+      "correct": 13,
+      "n": 16
+    },
+    "clarify": {
+      "correct": 16,
+      "n": 16
+    },
+    "unsupported": {
+      "correct": 13,
+      "n": 16
+    }
+  },
+  "original_core_protected_files": 11,
+  "activated_locally": true,
+  "rollback_preserved": true,
+  "herbert_external_pretraining": true,
+  "local_training_literal_overlap": 0,
+  "source_checkpoint_sha256": "fda46ce8cfd4062e9842144d8e165906facd8b00d05dd11218e2a1d777958723"
+}
