@@ -49,5 +49,29 @@
   "rollback_preserved": true,
   "herbert_external_pretraining": true,
   "local_training_literal_overlap": 0,
-  "source_checkpoint_sha256": "fda46ce8cfd4062e9842144d8e165906facd8b00d05dd11218e2a1d777958723"
+  "source_checkpoint_sha256": "fda46ce8cfd4062e9842144d8e165906facd8b00d05dd11218e2a1d777958723",
+  "relocation_check": {
+    "final_correct": 72,
+    "final_n": 80,
+    "retention_correct": 240,
+    "retention_n": 240,
+    "prediction_changes": 0,
+    "protected_files": 11
+  },
+  "dashboard_check": {
+    "symbol_insertion": true,
+    "caret_placement": true,
+    "examples": true,
+    "responsive_widths": [
+      320,
+      768,
+      1366
+    ],
+    "horizontal_overflow": false,
+    "live_solutions": [
+      "-8",
+      "8"
+    ],
+    "javascript_errors": 0
+  }
 }

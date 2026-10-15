@@ -2315,3 +2315,12 @@ Opis oparto na lokalnym raporcie końcowym, rejestrze modeli i zapisanym wyniku 
 Użytkownik potwierdził rozdzielenie kodu lokalnego i dokumentacji GitHub. Początkowo wybrany nowy katalog„AI SI” przemianowano najpierw na„TSI”, następnie na ostateczne„TSI-math-validator-5”, identyczne z nazwą wskazanego repozytorium GitHub. Starszych Al-SI i AI-SI-git nie przenoszono.
 
 Przygotowano dashboard z poleceniem, osobnym wyrażeniem, przedziałem wykresu, wynikami i przykładami. Przyciski symboli wstawiają zapis w pozycji kursora. Lokalny panel korzysta z rzeczywistego menedżera i walidatora; podgląd w rozmowie prezentuje interfejs i zapisane przykłady. W głównym README dodano tabelę przykładowych poleceń. Kod interfejsu pozostaje lokalny; repozytorium dokumentacyjne otrzymuje obraz dashboardu. Przeniesienie modeli objęło względne odwołania i aktualizację SHA kontenerów, bez uczenia nowych wag.
+
+
+### Potwierdzenie lokalnego repozytorium i publikacji dokumentacji
+
+Utworzono rzeczywiste lokalne repozytorium Git w nowym katalogu„TSI-math-validator-5”, z510 plikami Python, dokumentacją, panelem i aktywnymi zależnościami modeli. Repozytorium kodu nie ma zdalnego adresu. Wagi są obecne lokalnie i pomijane przez Git. Po przeniesieniu sprawdzono wszystkie80 poleceń i240 przypadków retencji:72/80 i240/240, zero zmian predykcji względem źródła, wszystkie11 chronionych plików zachowane. Jest to kontrola przeniesienia, nie nowy niezależny pomiar generalizacji.
+
+Sprawdzenie panelu w rzeczywistej przeglądarce przeszło: wstawianie symbolu i ustawienie kursora, wypełnianie przykładów, nawigacja wyników, brak poziomego przepełnienia przy szerokościach320,768 i1366 pikseli oraz rzeczywiste wykonanie polecenia z pierwiastkami−8 i8 i wykresem. Nie wykryto błędów JavaScript. Panel nasłuchuje tylko pod adresem lokalnym127.0.0.1.
+
+Do wskazanego repozytorium https://github.com/jbackk-lang/TSI-math-validator-5 wypchnięto dokumentację w commicie20e2335, a następnie uzupełnienie tej kontroli. Audyt listy publikowanych plików potwierdził brak źródeł Python/JavaScript/HTML, wag i danych treningowych. Publiczna historia zawiera dawne opisy i wyniki, a nie kod modeli. Starsze lokalne README i historie zaktualizowano bez przenoszenia ich katalogów i bez resetowania niezakończonych zmian Git.
