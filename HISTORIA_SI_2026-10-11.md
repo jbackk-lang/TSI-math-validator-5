@@ -2324,3 +2324,20 @@ Utworzono rzeczywiste lokalne repozytorium Git w nowym katalogu„TSI-math-valid
 Sprawdzenie panelu w rzeczywistej przeglądarce przeszło: wstawianie symbolu i ustawienie kursora, wypełnianie przykładów, nawigacja wyników, brak poziomego przepełnienia przy szerokościach320,768 i1366 pikseli oraz rzeczywiste wykonanie polecenia z pierwiastkami−8 i8 i wykresem. Nie wykryto błędów JavaScript. Panel nasłuchuje tylko pod adresem lokalnym127.0.0.1.
 
 Do wskazanego repozytorium https://github.com/jbackk-lang/TSI-math-validator-5 wypchnięto dokumentację w commicie20e2335, a następnie uzupełnienie tej kontroli. Audyt listy publikowanych plików potwierdził brak źródeł Python/JavaScript/HTML, wag i danych treningowych. Publiczna historia zawiera dawne opisy i wyniki, a nie kod modeli. Starsze lokalne README i historie zaktualizowano bez przenoszenia ich katalogów i bez resetowania niezakończonych zmian Git.
+
+
+## 2026-10-16 — zadania tekstowe, narzędzia akademickie i wspólne menu
+
+Rozszerzono zadania liniowe o trzy rodziny kwadratowe, następnie cztery rodziny optymalizacji. Dodano całki, macierze i logikę klasyczną oraz silną Kleene’a. Wszystkie zadania dostępne przez wspólne menu; wyniki badań zwijane. Zakres i wyniki są w dokumentach ETAP_KWADRATOWY i ETAP_AKADEMICKI. To rozszerzenia regułowe i narzędziowe, bez nowego treningu TSI.
+
+# Diagnostyka zapisu i wykresy całek — 16.10.2026
+
+Wprowadzono wspólne sprawdzanie zapisu przed wykonaniem zadania. Diagnostyka zawiera nazwę pola, indeksy początku i końca fragmentu (wewnętrznie od zera), wiersz i kolumnę pokazywane od jednego, opis oraz podpowiedź. Interfejs zaznacza fragment po wykryciu błędu i po wybraniu „Pokaż miejsce błędu”. Nie zmienia sam danych. Edycja usuwa nieaktualne wskazanie. Niepoprawny zapis nie uruchamia obliczenia.
+
+Obsługiwane: brakujące, nadmiarowe i niedopasowane nawiasy, błędy składni/operatorów, puste argumenty funkcji, nieobsługiwane funkcje, brak strony równania; w macierzach błędy JSON, nierówne wiersze, błędne elementy, zerowe mianowniki i niezgodne wymiary. Wskazanie wymiarów dotyczy całej macierzy lub wiersza, nie jednego znaku. Pozostałe błędy matematyczne nadal mogą być zgłaszane ogólnym komunikatem narzędzia. To kontrola obsługiwanego zapisu, nie ogólna ocena sensowności każdego rozumowania.
+
+Dodano wykres całki: f(x) i potwierdzona pierwotna F(x) dla C=0 w trybie nieoznaczonym. W oznaczonym wykres f(x) na przedziale z zaznaczonym obszarem. Uwzględniono kierunek granic w wyniku; rysunek przedstawia przedział w kolejności rosnącej. Punkty nierzeczywiste, nieskończone albo zbyt duże są pomijane. To podgląd próbkowany, nie dowód ani pełna analiza osobliwości. W szczególnych przypadkach biblioteka może nie wyznaczyć pierwotnej lub ciągłości.
+
+Sprawdzenia: **62/62** testy wybranych narzędzi, transportu procesów, diagnostyki oraz wartości i przerw w danych wykresu. Wcześniejszy zestaw etapu akademickiego: 261/261, bez ponownego pełnego uruchamiania w tej aktualizacji. Zestawy częściowo się pokrywają. Dwa przebiegi kontroli przeglądarkowej: wskazanie nawiasu/operatora/pustego argumentu i wiersza macierzy, zachowanie wpisu, brak wywołania obliczenia dla błędu, poprawienie i wykonanie całki oraz macierzy; następnie wykres pierwotnej i funkcji, całka oznaczona z wynikiem 9, widok mobilny i brak błędów JavaScript. 11 chronionych plików oraz aktywny checkpoint bez zmian SHA-256.
+
+Zmiany działają lokalnie. Na GitHub trafiają README, opis etapu i screenshoty, bez kodu, wag i danych treningowych.

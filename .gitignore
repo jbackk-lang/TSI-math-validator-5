@@ -6,3 +6,10 @@ docs/*
 !docs/*.md
 !docs/POMIARY.json
 !docs/DASHBOARD.png
+
+!docs/dashboard-menu.png
+!docs/blad-nawiasu.png
+!docs/blad-macierzy.png
+!docs/diagnostyka-mobile.png
+!docs/calka-z-wykresem.png
+!docs/calka-oznaczona.png
