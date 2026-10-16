@@ -12,6 +12,16 @@ Przygotowano lokalną wersję **portable Windows x64 z pełnym kodem, modelami, 
 
 ![English interface: solution audit](docs/audit-en.png)
 
+## Matryca wielkości, jednostki i uczony TSI
+
+Nowy wybór **Matryca wielkości i jednostek** obejmuje 20 modeli, dowolne pole jako niewiadomą i różne zgodne jednostki. Nazwę lub skrót jednostki można wpisać z podpowiedziami, np. `centymetr`, `km/h`, `kg/m³`, `mol/l`, `g/mol`. Dostępne są jednostki SI z przedrostkami, jednostki złożone, temperatury bezwzględne i chemia: masa molowa, stężenie, rozcieńczanie, molalność. Wynik pokazuje równania, wspólne niewiadome, macierz zależności, Jacobian i macierz sprawdzonych rozwiązań.
+
+**Wytrenowano dodatkowy czytnik tabel menedżera TSI.** W trybie „TSI uczony — rozpoznaj tabelę” rozpoznaje rodzinę i przypisuje wiersze. W trzech treningach: 396/396 odłożonych tabel dla samego czytnika (syntetyczny test nowych kombinacji znanego słownictwa). Sieć wsparta jawną kontrolą nazw i jednostek oraz dokładnym solverem: 360/360 przyjętych zadań końcowych i 60/60 dodatkowych prób nowych liczb/jednostek. Liczb nie liczy sieć; nie jest to uniwersalne rozumienie opisów. Niejasności wskazują konkretne nazwy, wartości i jednostki.
+
+[Modele i jednostki](docs/RELACJE_JEDNOSTKI_2026-10-16.md) · [Trening, wyniki i ograniczenia](docs/UCZENIE_TABEL_TSI_2026-10-16.md).
+
+![Uczony TSI: tabela i macierz rozwiązań](docs/tsi-uczony-tabela.png)
+
 ## Co robi
 
 Wspólne rozwijane menu prowadzi do wszystkich rodzajów zadań. Formularz i wynik są obok siebie, a na telefonie jeden pod drugim. Wyniki badań są w zwijanej sekcji.
@@ -28,7 +38,7 @@ Wspólne rozwijane menu prowadzi do wszystkich rodzajów zadań. Formularz i wyn
 | Audyt rozwiązania | Równoważność kolejnych równań, utracone/dodane rozwiązania, pierwszy błędny krok; tożsamości i kontrprzykłady; trzy oceny i raport JSON |
 | Diagnostyka zapisu | Pole i pozycja błędu, wyjaśnienie, podpowiedź i zaznaczenie w tekście; błędny wpis pozostaje do poprawy |
 
-Nowe narzędzia i parser opisów są regułowe. **Nie oznaczają nowych wyuczonych zdolności rdzenia TSI.** Kalkulator logiki odtwarza etykiety użyte w treningu; nie wywołuje sieci logicznej.
+Parser opisów i narzędzia obliczeniowe są regułowe. Uczony czytnik tabel jest osobnym modułem menedżera; nie zmienia wag pierwotnego rdzenia TSI. Kalkulator logiki odtwarza etykiety użyte w treningu; nie wywołuje sieci logicznej.
 
 ![Główny dashboard z rozwijanym menu](docs/dashboard-menu.png)
 

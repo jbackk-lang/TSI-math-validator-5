@@ -2413,3 +2413,15 @@ Usunięto zależność aktywnego rdzenia od zapisanych dawnych absolutnych ście
 Portable uruchomiono w nowym katalogu ze spacją w nazwie, używając wyłącznie dołączonego Pythona. Offline sprawdzono całkę, odwrotność macierzy, audyt utraty x=0 i wyuczony menedżer: x²−9 → −3,3. Proces testowy blokował odczyt starych katalogów aplikacji; biblioteka standardowa i zależności pochodziły z paczki. Test nie zastępuje próby na innym fizycznym komputerze.
 
 Sprawdzono ponowne uruchomienie bez tworzenia drugiej instancji i zatrzymanie przez własny token. Zwykły dashboard 8795 i MUZ 8796 pozostały dostępne. Limit wywołania narzędzi akademickich w portable wynosi 90 sekund, aby uwzględnić pierwszy import bibliotek; zwykła instalacja zachowuje 15 sekund. Pierwszy start modeli może trwać dłużej. 11 chronionych plików i aktywny model bez zmiany wag.
+
+
+## 16.10.2026 — matryca relacji, jednostki fizyczne i chemiczne
+
+Zamiast rozpoznawania nazw przedmiotów dodano jawny wybór zależności i niewiadomej: 20 modeli, dane z różnymi jednostkami, solver symboliczny, dokładne podstawienie i warunki dziedziny. Dodano nazwy i skróty jednostek, przedrostki SI, złożenia, przelicznik temperatur oraz chemię (mole, masa molowa, stężenie, rozcieńczanie, molalność). Doprecyzowania wskazują konkretny wpis, pole i przyczynę. Dodano macierz obecności wielkości w równaniach, symboliczną macierz Jacobiego, A i b dla układów liniowych oraz macierz kompletnych zweryfikowanych gałęzi rozwiązań. Jacobian jest prezentowany; nie uruchomiono metody Newtona ani nowego treningu TSI. Jednostki ppm/ppb mają jawną bezwymiarową konwencję, bez automatycznej zamiany na mg/l.
+
+Weryfikacja: 53 nowe testy, dotychczasowe 326 testów (12 wymagało skorygowania ścieżki adaptera w środowisku testowym), test przeglądarkowy formularzy, doprecyzowań, macierzy, nawigacji i telefonu; własny Python portable sprawdził stężenie i macierz rozwiązań. [Pełny opis etapu](docs/RELACJE_JEDNOSTKI_2026-10-16.md). Wagi i chronione źródła pozostają bez zmian.
+
+
+## 16.10.2026 — ukończone uczenie dodatkowego czytnika tabel TSI
+
+Przeprowadzono trzy treningi po 800 kroków na 1188 przykładach; 396 DEV i 396 zastrzeżonych przykładów końcowych. Każdy wybrany czytnik uzyskał 396/396 na końcowym teście syntetycznych kombinacji. Wybrano ziarno 1612 według DEV. Audyt wykonania wykrył i usunął brak jednostki ułamka rabatu, dodano kontrolę nazw deklarowanych, wymiarów i unikalności wiązań. Bez zmiany wag po testach: 360/360 przyjętych zadań z nauczycielem, 60/60 nowych liczb/jednostek, 7/7 małych scenariuszy rozwiązań/doprecyzowań. Uczony moduł rozpoznaje tabelę; liczby i ich sprawdzenie zapewnia solver. Nowe moduły: 65 testów. Poprzedni rdzeń i menedżer bez zmian. [Protokół, wyniki i ograniczenia](docs/UCZENIE_TABEL_TSI_2026-10-16.md).
