@@ -4,6 +4,14 @@ Stan: **16 października 2026**. Lokalny warsztat matematyczny z uczonym menedż
 
 To repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i dane treningowe pozostają w oddzielnym repozytorium lokalnym.
 
+## Matryca zależności i automatyczne dopasowanie
+
+Nowa strona **Matryca zależności** (`/matryca`, odnośnik w Geometrii) zamienia wzór lub kontrolowany opis w tabelę liczb, niewiadomych i działań z odwołaniami między wierszami. Pokazuje nawiasy, role licznika i mianownika, kolejność obliczeń i wyniki pośrednie. Przykłady: `2 × (3 + 4)`, `−3^2`, `pomnóż sumę 3 i 4 przez 2`. Brakująca wartość jest wskazana nazwą.
+
+**Automatyczna pętla** próbuje do trzech metod odczytu i buduje macierz znanymi regułami. Zatrzymuje się przy brakach i niezgodnych interpretacjach. Eksperymentalny uczony czytnik może zaproponować role boków w ilorazie; użytkownik sprawdza je przed wynikiem liczbowym. Pętla nie trenuje się na własnych domysłach. Testy struktury i pętli: **54/54**. [Zakres, nauka i przykłady](docs/MATRYCA_ZALEZNOSCI_2026-10-16.md).
+
+![Matryca zależności: nawiasy, role i wyniki pośrednie](docs/matryca-zaleznosci.png)
+
 ## PL / EN i portable
 
 Przełącznik **PL / EN** zmienia interfejs, komunikaty i opisy wyników oraz zapamiętuje wybór w przeglądarce. Wpisane dane pozostają bez zmian. Polecenia i opisy zadań tekstowych nadal muszą być po polsku; wzory i audyt nie wymagają polskiej treści.
@@ -24,7 +32,7 @@ Nowy wybór **Matryca wielkości i jednostek** obejmuje 20 modeli, dowolne pole 
 
 ## Nauka od podstaw
 
-W menu **Podstawy geometrii — nauka TSI** są rysunki, znaczenia i sprawdzian opisów punktu, prostej, półprostej, odcinka i kąta. Wytrenowano osobny mały czytnik: 288 przykładów treningowych, 72/72 DEV i 72/72 odłożonych kombinacji znanych zwrotów. Nieznane słowa wskazuje do doprecyzowania. Dalsze ćwiczenia z dokładnym nauczycielem obejmują odległość, położenie i kąty; nie oznaczają opanowania ich przez sieć. Nowy dział jest po polsku. [Protokół, wyniki i ograniczenia](docs/PODSTAWY_GEOMETRII_2026-10-16.md).
+Na osobnej stronie **Geometria — nauka i ćwiczenia** (`/geometria`) są rysunki, znaczenia i sprawdzian opisów punktu, prostej, półprostej, odcinka i kąta. Wytrenowano osobny mały czytnik: 288 przykładów treningowych, 72/72 DEV i 72/72 odłożonych kombinacji znanych zwrotów. Nieznane słowa wskazuje do doprecyzowania. Dalsze ćwiczenia z dokładnym nauczycielem obejmują odległość, położenie i kąty; nie oznaczają opanowania ich przez sieć. Nowy dział jest po polsku. [Protokół, wyniki i ograniczenia](docs/PODSTAWY_GEOMETRII_2026-10-16.md).
 
 ![Podstawy geometrii](docs/podstawy-geometrii.png)
 
@@ -34,7 +42,7 @@ Etap 2 — **kąt, równoległość i prostopadłość**: osobny czytnik nazw re
 
 Lekcja koła i okręgu: dziewięć nowych pojęć oraz przycisk **Wyjaśnij słowa z treści**. [Zakres lekcji i ograniczenia](docs/KOLO_OKRAG_SLOWNICTWO_2026-10-16.md).
 
-Dodano rozszerzalny słownik pojęć pudełka: **39 pojęć i 189 unikatowych form po normalizacji zapisu**. W zadaniach tekstowych można jawnie nauczyć nowej nazwy dna lub pokrywki. Wynik pokazuje odczytane znaczenia, negacje, poprawki i konkretne braki. „Bez przykrywki” i „nie pomijaj przykrywki” prowadzą do przeciwnych warunków. Jest to symboliczna warstwa z nadzorowanym słownikiem, bez nowego treningu wag ani uniwersalnego rozumienia języka. [Zakres, przykłady i sprawdziany](docs/SLOWA_ZNACZENIA_2026-10-16.md).
+We wcześniejszej lekcji rozszerzono słownik do **39 pojęć i 189 unikatowych form po normalizacji zapisu**; kolejne działy geometrii dodają dalsze pojęcia. W zadaniach tekstowych można jawnie nauczyć nowej nazwy dna lub pokrywki. Wynik pokazuje odczytane znaczenia, negacje, poprawki i konkretne braki. „Bez przykrywki” i „nie pomijaj przykrywki” prowadzą do przeciwnych warunków. Jest to symboliczna warstwa z nadzorowanym słownikiem, bez nowego treningu wag ani uniwersalnego rozumienia języka. [Zakres, przykłady i sprawdziany](docs/SLOWA_ZNACZENIA_2026-10-16.md).
 
 ## Co robi
 
