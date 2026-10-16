@@ -5,8 +5,8 @@
 | Kolejność | Temat | Stan |
 |---|---|---|
 | 1 | Punkt, prosta, półprosta, odcinek, kąt | Czytnik pojęć wytrenowany; 72/72 odłożonych kombinacji znanych zwrotów |
-| 2 | Odległość, położenie, przynależność | Dostępny dokładny nauczyciel; brak zaliczenia przez sieć |
-| 3 | Kąty, równoległość, prostopadłość | Dostępny dokładny nauczyciel; brak zaliczenia przez sieć |
+| 2 | Kąty, równoległość, prostopadłość | Uczony czytnik nazw relacji na dokładnych cechach; 153/153 różnych odłożonych danych; nie jest to rozumienie opisów |
+| 3 | Odległość, położenie, przynależność | Dostępny dokładny nauczyciel; brak zaliczenia przez sieć |
 | 4 | Trójkąty, czworokąty, koło i okrąg; części i własności | Częściowy słownik koła i okręgu; pełne zależności do nauki |
 | 5 | Obwód, pole i jednostki | Osobne narzędzia obliczeniowe istnieją; rozumienie opisów do sprawdzenia |
 | 6 | Zadania opisowe i dopiero później trygonometria | Potrzebne sprawdziany podstaw |

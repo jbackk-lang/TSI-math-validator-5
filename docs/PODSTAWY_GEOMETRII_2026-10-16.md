@@ -1,5 +1,7 @@
 # Podstawy przed geometrią zaawansowaną — 16.10.2026
 
+Aktualizacja: etap 2 rozwinięto o osobny czytnik relacji. [Kąt, równoległość i prostopadłość](KATY_PROSTE_2026-10-16.md). Poniżej zapis pierwszego etapu.
+
 Dodano osobny dział **Podstawy geometrii — nauka TSI**, dostępny ze wspólnego menu zadań. Pierwszy etap obejmuje punkt, prostą, półprostą, odcinek i kąt, ich rysunki, definicje oraz różnice. Opanowania geometrii nie wnioskujemy z poprawnych obliczeń narzędzia ani z liczby wpisów słownika.
 
 ## Co naprawdę wytrenowano

@@ -28,11 +28,13 @@ W menu **Podstawy geometrii — nauka TSI** są rysunki, znaczenia i sprawdzian 
 
 ![Podstawy geometrii](docs/podstawy-geometrii.png)
 
+Etap 2 — **kąt, równoległość i prostopadłość**: osobny czytnik nazw relacji na dokładnie wyznaczonych cechach geometrycznych. Po usunięciu powtórzeń: 96/96 DEV i 153/153 odłożonych danych. Jednostki i cechy oblicza narzędzie, sieć przypisuje nazwę, a nauczyciel sprawdza odpowiedź. [Wyniki, zakres i granice](docs/KATY_PROSTE_2026-10-16.md).
+
 ## Słowa i ich znaczenia
 
 Lekcja koła i okręgu: dziewięć nowych pojęć oraz przycisk **Wyjaśnij słowa z treści**. [Zakres lekcji i ograniczenia](docs/KOLO_OKRAG_SLOWNICTWO_2026-10-16.md).
 
-Dodano rozszerzalny słownik pojęć pudełka: **29 pojęć i 162 unikatowe formy po normalizacji zapisu**. W zadaniach tekstowych można jawnie nauczyć nowej nazwy dna lub pokrywki. Wynik pokazuje odczytane znaczenia, negacje, poprawki i konkretne braki. „Bez przykrywki” i „nie pomijaj przykrywki” prowadzą do przeciwnych warunków. Jest to symboliczna warstwa z nadzorowanym słownikiem, bez nowego treningu wag ani uniwersalnego rozumienia języka. [Zakres, przykłady i sprawdziany](docs/SLOWA_ZNACZENIA_2026-10-16.md).
+Dodano rozszerzalny słownik pojęć pudełka: **39 pojęć i 189 unikatowych form po normalizacji zapisu**. W zadaniach tekstowych można jawnie nauczyć nowej nazwy dna lub pokrywki. Wynik pokazuje odczytane znaczenia, negacje, poprawki i konkretne braki. „Bez przykrywki” i „nie pomijaj przykrywki” prowadzą do przeciwnych warunków. Jest to symboliczna warstwa z nadzorowanym słownikiem, bez nowego treningu wag ani uniwersalnego rozumienia języka. [Zakres, przykłady i sprawdziany](docs/SLOWA_ZNACZENIA_2026-10-16.md).
 
 ## Co robi
 
