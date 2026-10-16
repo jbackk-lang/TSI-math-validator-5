@@ -1,12 +1,22 @@
 # TSI-math-validator-5
 
+## Przebudowany odczyt zadań — 17.10.2026
+
+Wspólny model zapisuje wielkości, niewiadome, relacje, warunki i cel. Dashboard pokazuje odczyt, wynik oraz fragmenty wymagające wyjaśnienia. Nowy zakres: procenty i bilanse, liczebności klas, ciągi z warunkami, kąty trapezu, stożek oraz funkcja i optymalizacja prostopadłościanu.
+
+**Sprawdzono: 10/10 znanych zadań CKE/ZPE, 50/50 nowych wariantów i 940 testów regresji.** W szerszym starszym zestawie ZPE nadal tylko 20 odpowiedzi na 204 przypadki — nie deklarujemy obsługi dowolnej treści ani wszystkich arkuszy. [Przykłady, dashboard, wyniki i ograniczenia](docs/PRZEBUDOWA_CZYTNIKA_2026-10-17.md).
+
+## Nauka z poprawek i relacje geometryczne — 17.10.2026
+
+Dodatkowy czytnik geometrii po szkoleniu odpowiada poprawnie na 6/6 wskazanych pytań ZPE o promień, średnicę i cięciwę; świeży syntetyczny sprawdzian: 210/210. Pokazuje odczytaną relację i uzasadnienie lub kontrprzykład. Panel **Potwierdzone poprawki** obsługuje stałe zbieranie lekcji, okresowy trening opisów działań liczbowych, kontrolę poprawy i cofanie dodatkowego modelu. Uczenie geometrii nie oznacza jeszcze znajomości wszystkich figur. [Zakres, wyniki, obsługa i ograniczenia](docs/STALA_NAUKA_I_GEOMETRIA_2026-10-17.md).
+
 ## Aktualizacja odczytu zadań i audytu — 16.10.2026
 
 Wspólny formularz obsługuje łączenie sumy, różnicy, iloczynu i ilorazu dwóch liczb, pytania o poznane pojęcia geometrii oraz wielkości geometryczne. Pokazuje odczytane relacje, założenia i konkretne brakujące dane. Audyt rozróżnia jedną tożsamość od kolejnych równań i wyjaśnia niezgodność trybu z liczbą wierszy. Sprawdzono także zadania odwrócone, rozszerzone i uproszczone. [Przykłady, testy i ograniczenia](docs/ZMIANY_ZADAN_I_AUDYT_2026-10-16.md).
 
-Stan: **16 października 2026**. Lokalny warsztat matematyczny z uczonym menedżerem TSI oraz jawnymi narzędziami obliczeniowymi SymPy.
+Stan: **17 października 2026**. Lokalny warsztat matematyczny z uczonym menedżerem TSI oraz jawnymi narzędziami obliczeniowymi SymPy.
 
-To repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i dane treningowe pozostają w oddzielnym repozytorium lokalnym.
+Publiczne repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i dane treningowe pozostają w oddzielnym repozytorium lokalnym.
 
 ## Matryca zależności i automatyczne dopasowanie
 
@@ -14,7 +24,7 @@ To repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i da
 
 **Automatyczna pętla** próbuje do trzech metod odczytu. Uczony czytnik ról działa automatycznie w zakresie pełnej kontrolowanej gramatyki i jawnie zdefiniowanych nazw boków; jego odpowiedź musi zgadzać się z kontrolą znaczenia. Dodatkowe słowa, sprzeczne role i brakujące dane zatrzymują obliczenie. Nowe sprawdziany integracji: 12/12 poprawnych opisów i 12/12 zatrzymanych błędnych; regresja wcześniejszych poprawnych opisów wzrosła z 12/16 do 16/16. To wynik połączenia reguł i sieci, bez zmiany głównych wag TSI. [Zakres, nauka i przykłady](docs/MATRYCA_ZALEZNOSCI_2026-10-16.md).
 
-Osobna strona **Matryca zależności** (`/matryca`) pokazuje pełną tabelę i wyniki pośrednie. Strona **Potwierdzone poprawki** (`/lekcje`) zbiera nierozpoznane przypadki oraz poprawki użytkownika, oddzielając materiał do lekcji od odłożonego sprawdzianu. Nie zmienia automatycznie wag. [Kierunki i bank poprawek](docs/KOLEJNY_KROK_2026-10-16.md).
+Osobna strona **Matryca zależności** (`/matryca`) pokazuje pełną tabelę i wyniki pośrednie. Strona **Potwierdzone poprawki** (`/lekcje`) zbiera nierozpoznane przypadki oraz poprawki użytkownika, oddzielając materiał do lekcji od odłożonego sprawdzianu. Potwierdzone lekcje mogą uruchomić kontrolowany trening dodatkowego czytnika działań liczbowych; osobny sprawdzian decyduje o jego włączeniu. Oryginalne wagi pozostają zachowane. [Kierunki i bank poprawek](docs/KOLEJNY_KROK_2026-10-16.md).
 
 ![Wspólny formularz: od opisu przez matrycę do wyniku](docs/zadania-matryca-odczyt.png)
 
@@ -26,7 +36,7 @@ Uzupełniono tłumaczenia lekcji słów, wyników pudełka i równań oraz nowyc
 
 Przygotowano lokalną wersję **portable Windows x64 z pełnym kodem, modelami, Pythonem i bibliotekami**. Po rozpakowaniu całości: `START.bat`; zatrzymanie: `ZATRZYMAJ.bat`. Nie wymaga instalowania Pythona ani pobierania modeli. Pakiet z kodem pozostaje lokalnie; nie jest plikiem do pobrania z tego repozytorium dokumentacyjnego. [Zakres i testy portable](docs/PL_EN_PORTABLE_2026-10-16.md).
 
-Aktualizacja ZIP obejmuje również całą nową geometrię, matrycę, automatyczny sprawdzany odczyt ról, wspólny formularz i bank poprawek. Sprawdzono działanie na dołączonym Pythonie i integralność archiwum. [Aktualny zakres paczki](docs/PORTABLE_AKTUALIZACJA_2026-10-16.md). Łączny sprawdzian powiązanych funkcji matematycznych: **289/289 testów**.
+Pakiet portable obejmuje przebudowany czytnik relacji oraz wcześniejszą geometrię, matrycę, uczone czytniki, wspólny formularz i mechanizm banku poprawek. Prywatny bank użytkownika nie jest częścią paczki. Sprawdzono działanie na dołączonym Pythonie i integralność archiwum. [Wcześniejszy opis paczki](docs/PORTABLE_AKTUALIZACJA_2026-10-16.md). Łączny sprawdzian powiązanych funkcji matematycznych: **289/289 testów**.
 
 ![English interface: solution audit](docs/audit-en.png)
 
@@ -70,7 +80,7 @@ Wspólne rozwijane menu prowadzi do wszystkich rodzajów zadań. Formularz i wyn
 | Audyt rozwiązania | Równoważność kolejnych równań, utracone/dodane rozwiązania, pierwszy błędny krok; tożsamości i kontrprzykłady; trzy oceny i raport JSON |
 | Diagnostyka zapisu | Pole i pozycja błędu, wyjaśnienie, podpowiedź i zaznaczenie w tekście; błędny wpis pozostaje do poprawy |
 
-Parser opisów i narzędzia obliczeniowe są regułowe. Uczony czytnik tabel jest osobnym modułem menedżera; nie zmienia wag pierwotnego rdzenia TSI. Kalkulator logiki odtwarza etykiety użyte w treningu; nie wywołuje sieci logicznej.
+Czytniki opisów korzystają z reguł, wspólnego modelu relacji i wyspecjalizowanych sieci. Dokładne narzędzia obliczeniowe korzystają z SymPy. Uczony czytnik tabel jest osobnym modułem menedżera; nie zmienia wag pierwotnego rdzenia TSI. Kalkulator logiki odtwarza etykiety użyte w treningu; nie wywołuje sieci logicznej.
 
 ![Główny dashboard z rozwijanym menu](docs/dashboard-menu.png)
 
