@@ -22,11 +22,17 @@ Nowy wybór **Matryca wielkości i jednostek** obejmuje 20 modeli, dowolne pole 
 
 ![Uczony TSI: tabela i macierz rozwiązań](docs/tsi-uczony-tabela.png)
 
+## Nauka od podstaw
+
+W menu **Podstawy geometrii — nauka TSI** są rysunki, znaczenia i sprawdzian opisów punktu, prostej, półprostej, odcinka i kąta. Wytrenowano osobny mały czytnik: 288 przykładów treningowych, 72/72 DEV i 72/72 odłożonych kombinacji znanych zwrotów. Nieznane słowa wskazuje do doprecyzowania. Dalsze ćwiczenia z dokładnym nauczycielem obejmują odległość, położenie i kąty; nie oznaczają opanowania ich przez sieć. Nowy dział jest po polsku. [Protokół, wyniki i ograniczenia](docs/PODSTAWY_GEOMETRII_2026-10-16.md).
+
+![Podstawy geometrii](docs/podstawy-geometrii.png)
+
 ## Słowa i ich znaczenia
 
 Lekcja koła i okręgu: dziewięć nowych pojęć oraz przycisk **Wyjaśnij słowa z treści**. [Zakres lekcji i ograniczenia](docs/KOLO_OKRAG_SLOWNICTWO_2026-10-16.md).
 
-Dodano rozszerzalny słownik pojęć pudełka: **23 pojęcia i 139 zapisanych form wyrazów**. W zadaniach tekstowych można jawnie nauczyć nowej nazwy dna lub pokrywki. Wynik pokazuje odczytane znaczenia, negacje, poprawki i konkretne braki. „Bez przykrywki” i „nie pomijaj przykrywki” prowadzą do przeciwnych warunków. Jest to symboliczna warstwa z nadzorowanym słownikiem, bez nowego treningu wag ani uniwersalnego rozumienia języka. [Zakres, przykłady i sprawdziany](docs/SLOWA_ZNACZENIA_2026-10-16.md).
+Dodano rozszerzalny słownik pojęć pudełka: **29 pojęć i 162 unikatowe formy po normalizacji zapisu**. W zadaniach tekstowych można jawnie nauczyć nowej nazwy dna lub pokrywki. Wynik pokazuje odczytane znaczenia, negacje, poprawki i konkretne braki. „Bez przykrywki” i „nie pomijaj przykrywki” prowadzą do przeciwnych warunków. Jest to symboliczna warstwa z nadzorowanym słownikiem, bez nowego treningu wag ani uniwersalnego rozumienia języka. [Zakres, przykłady i sprawdziany](docs/SLOWA_ZNACZENIA_2026-10-16.md).
 
 ## Co robi
 
