@@ -40,6 +40,12 @@ Wcześniejsze douczanie klasyfikatora całych opisów nie poprawiło nowych sfor
 
 Obliczenia i budowę zależności wykonuje jawne narzędzie. Nie nauczono sieci ogólnej arytmetyki. Kontrolowany parser opisów jest regułowy; uczony czytnik pracuje tylko w osobnym trybie ról. Dotychczasowy czytnik całych opisów trygonometrycznych z wynikiem 95/96 pozostaje nieaktywny. Matryca nie oznacza rozumienia dowolnych zadań ani samodzielnego wiarygodnego uczenia się na własnych odpowiedziach.
 
-Sprawdziany: **54 testy matrycy i pętli**; dodatkowy audyt istniejącego narzędzia rachunkowego: **24/24 wyników i 4/4 odrzuconych błędnych zapisów**. Osobno sprawdzany jest działający interfejs i eksperymentalny czytnik. Kod, wagi, protokoły z danymi i szczegółowe raporty pozostają lokalnie.
+Sprawdziany: **59 testów matrycy i pętli**; dodatkowy audyt istniejącego narzędzia rachunkowego: **24/24 wyników i 4/4 odrzuconych błędnych zapisów**. Osobno sprawdzany jest działający interfejs i eksperymentalny czytnik. Kod, wagi, protokoły z danymi i szczegółowe raporty pozostają lokalnie.
+
+### Dodatkowa kontrola przed szerszym zastosowaniem
+
+Zamrożono 16 poprawnych opisów i 12 niepoprawnych lub niejednoznacznych przypadków. To ręcznie ułożone nowe pełne opisy, częściowo łączące znane zwroty, a nie test dowolnego języka. Pierwsza próba wykryła błąd integracji: wewnętrzna nazwa przeciwprostokątnej przekraczała limit długości zmiennej. Po jego naprawie wykryto również niejednoznaczny opis boku jednocześnie „naprzeciw kąta” i „przy kącie”; dodano jawną kontrolę sprzecznych ról.
+
+Po poprawkach **kontrola regresji na tym samym, już obejrzanym zbiorze** daje 12 poprawnych propozycji na 16 poprawnych opisów, 4 zatrzymania z powodu nieobsługiwanego słownictwa lub konstrukcji oraz 12/12 zatrzymanych przypadków niepoprawnych. Brak błędnych propozycji w końcowej regresji nie jest nowym niezależnym dowodem ogólnego rozumienia. Potwierdzanie propozycji pozostaje wymagane. Nie zmieniono wag głównego TSI ani czytnika ról.
 
 Aktualizacja dotyczy uruchomionej lokalnej aplikacji. Wcześniej przygotowane archiwum portable nie jest potwierdzeniem obecności tej zmiany.

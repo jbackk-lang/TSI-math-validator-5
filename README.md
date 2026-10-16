@@ -8,13 +8,15 @@ To repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i da
 
 Nowa strona **Matryca zależności** (`/matryca`, odnośnik w Geometrii) zamienia wzór lub kontrolowany opis w tabelę liczb, niewiadomych i działań z odwołaniami między wierszami. Pokazuje nawiasy, role licznika i mianownika, kolejność obliczeń i wyniki pośrednie. Przykłady: `2 × (3 + 4)`, `−3^2`, `pomnóż sumę 3 i 4 przez 2`. Brakująca wartość jest wskazana nazwą.
 
-**Automatyczna pętla** próbuje do trzech metod odczytu i buduje macierz znanymi regułami. Zatrzymuje się przy brakach i niezgodnych interpretacjach. Eksperymentalny uczony czytnik może zaproponować role boków w ilorazie; użytkownik sprawdza je przed wynikiem liczbowym. Pętla nie trenuje się na własnych domysłach. Testy struktury i pętli: **54/54**. [Zakres, nauka i przykłady](docs/MATRYCA_ZALEZNOSCI_2026-10-16.md).
+**Automatyczna pętla** próbuje do trzech metod odczytu i buduje macierz znanymi regułami. Zatrzymuje się przy brakach i niezgodnych interpretacjach. Eksperymentalny uczony czytnik może zaproponować role boków w ilorazie; użytkownik sprawdza je przed wynikiem liczbowym. Pętla nie trenuje się na własnych domysłach. Testy struktury i pętli: **59/59**. [Zakres, nauka i przykłady](docs/MATRYCA_ZALEZNOSCI_2026-10-16.md).
 
 ![Matryca zależności: nawiasy, role i wyniki pośrednie](docs/matryca-zaleznosci.png)
 
 ## PL / EN i portable
 
 Przełącznik **PL / EN** zmienia interfejs, komunikaty i opisy wyników oraz zapamiętuje wybór w przeglądarce. Wpisane dane pozostają bez zmian. Polecenia i opisy zadań tekstowych nadal muszą być po polsku; wzory i audyt nie wymagają polskiej treści.
+
+Uzupełniono tłumaczenia lekcji słów, wyników pudełka i równań oraz nowych etykiet menu. Cytowane fragmenty zadania zachowują język oryginału. Nowe osobne strony Geometria i Matryca zależności są obecnie po polsku.
 
 Przygotowano lokalną wersję **portable Windows x64 z pełnym kodem, modelami, Pythonem i bibliotekami**. Po rozpakowaniu całości: `START.bat`; zatrzymanie: `ZATRZYMAJ.bat`. Nie wymaga instalowania Pythona ani pobierania modeli. Pakiet z kodem pozostaje lokalnie; nie jest plikiem do pobrania z tego repozytorium dokumentacyjnego. [Zakres i testy portable](docs/PL_EN_PORTABLE_2026-10-16.md).
 
