@@ -1,5 +1,9 @@
 # TSI-math-validator-5
 
+## Aktualizacja odczytu zadań i audytu — 16.10.2026
+
+Wspólny formularz obsługuje łączenie sumy, różnicy, iloczynu i ilorazu dwóch liczb, pytania o poznane pojęcia geometrii oraz wielkości geometryczne. Pokazuje odczytane relacje, założenia i konkretne brakujące dane. Audyt rozróżnia jedną tożsamość od kolejnych równań i wyjaśnia niezgodność trybu z liczbą wierszy. Sprawdzono także zadania odwrócone, rozszerzone i uproszczone. [Przykłady, testy i ograniczenia](docs/ZMIANY_ZADAN_I_AUDYT_2026-10-16.md).
+
 Stan: **16 października 2026**. Lokalny warsztat matematyczny z uczonym menedżerem TSI oraz jawnymi narzędziami obliczeniowymi SymPy.
 
 To repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i dane treningowe pozostają w oddzielnym repozytorium lokalnym.
