@@ -17,11 +17,22 @@ Wspólne rozwijane menu prowadzi do wszystkich rodzajów zadań. Formularz i wyn
 | Wykresy całek | Funkcja podcałkowa; dla nieoznaczonej także pierwotna przy C=0, gdy potwierdzona; dla oznaczonej przedział i zacieniowany obszar |
 | Macierze do 6 × 6 | Suma, iloczyn, transpozycja, wyznacznik, odwrotność, rząd i układy A·x=B; wykrywanie osobliwości i sprzeczności |
 | Logika | Klasyczna oraz trójstanowa silna Kleene’a: NOT, AND, OR, XOR, IMPLIES, EQUIV; jawne tabele działań |
+| Audyt rozwiązania | Równoważność kolejnych równań, utracone/dodane rozwiązania, pierwszy błędny krok; tożsamości i kontrprzykłady; trzy oceny i raport JSON |
 | Diagnostyka zapisu | Pole i pozycja błędu, wyjaśnienie, podpowiedź i zaznaczenie w tekście; błędny wpis pozostaje do poprawy |
 
 Nowe narzędzia i parser opisów są regułowe. **Nie oznaczają nowych wyuczonych zdolności rdzenia TSI.** Kalkulator logiki odtwarza etykiety użyte w treningu; nie wywołuje sieci logicznej.
 
 ![Główny dashboard z rozwijanym menu](docs/dashboard-menu.png)
+
+## Audyt własnego rozwiązania
+
+Wybierz **Audyt rozwiązania i kontrprzykłady** i wpisz każde równanie w osobnym wierszu. Przejście `x*(x-1)=0` → `x-1=0` zostanie obalone ze wskazaniem utraconego x=0. Dla `sqrt(x^2)=x` w liczbach rzeczywistych dostaniesz kontrprzykład; przy x≥0 tożsamość zostanie potwierdzona. Można wybrać założenia i pobrać raport z wersją silnika oraz sumą źródła. Wyniki mają oceny: potwierdzone, obalone, nierozstrzygnięte.
+
+Zakres: jedna zmienna, równania wymierne stopnia do 6 po uproszczeniu; wybrane tożsamości i próbkowane kontrprzykłady. To nie jest ogólny asystent dowodów. Brak kontrprzykładu nie dowodzi poprawności. [Zakres i przykłady audytora](docs/AUDYT_ROZUMOWANIA_2026-10-16.md).
+
+![Audyt: rozwiązanie utracone przy dzieleniu](docs/audyt-utraty.png)
+
+Wyniki obliczeń wyświetlane są równolegle w zapisie matematycznym i technicznym do skopiowania, np. **x³/3 + C** i `x**3/3 + C`.
 
 ## Błąd: gdzie, co i jak poprawić
 
@@ -56,10 +67,12 @@ Całki przyjmują zmienną x, funkcje sin, cos, tan, exp, log, sqrt, Abs i stał
 | Historyczny test pięciu celów wyuczonego menedżera, 15.10.2026 | 72/80 — 90% |
 | Historyczny test zachowania wcześniejszych odpowiedzi | 240/240 |
 | Etap akademicki i wcześniejsze zadania, przed diagnostyką | 261/261 |
-| Bieżący zestaw regresji narzędzi, transportu, diagnostyki i danych wykresu | 62/62 |
+| Poprzedni zestaw regresji diagnostyki i wykresów | 62/62 |
+| Obecny pełny zestaw: zadania, optymalizacja, narzędzia, diagnostyka i audyt | **326/326** |
+| Testy audytora, zawarte w pełnym zestawie | 37/37 |
 | Logika kalkulatora względem oryginalnych etykiet treningowych | 54/54 kombinacje |
 
-Wyniki 261 i 62 obejmują częściowo te same sprawdzenia; nie należy ich sumować. Historycznych 72/80 i 240/240 nie zmierzono ponownie w tym etapie. Sprawdzono również rzeczywiste formularze, wskazanie błędu i poprawę wpisu, wykresy, nawigację oraz widok mobilny. Kontrola SHA-256 potwierdza zachowanie 11 chronionych plików i aktywnego checkpointu.
+Zestawy 261, 62 i 326 obejmują częściowo te same sprawdzenia; nie należy ich sumować. Historycznych 72/80 i 240/240 nie zmierzono ponownie w tym etapie. Sprawdzono również rzeczywiste formularze, wskazanie błędu i poprawę wpisu, wykresy, nawigację oraz widok mobilny. Kontrola SHA-256 potwierdza zachowanie 11 chronionych plików i aktywnego checkpointu.
 
 90% dotyczy syntetycznego zestawu wyboru celów, nie dowolnych poleceń użytkowników ani całej matematyki. Parser treści ma kontrolowane wzorce; poprawny rachunek nie dowodzi poprawnej interpretacji dowolnego opisu. Sprawdzenie przez tę samą bibliotekę nie jest niezależnym dowodem kompletności rozwiązania. Ogólny czat, autonomiczny planista i pełny zakres matematyki akademickiej pozostają poza potwierdzonym zakresem.
 
