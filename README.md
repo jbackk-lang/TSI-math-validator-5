@@ -6,19 +6,23 @@ To repozytorium GitHub zawiera **dokumentację i zrzuty ekranu**. Kod, wagi i da
 
 ## Matryca zależności i automatyczne dopasowanie
 
-Nowa strona **Matryca zależności** (`/matryca`, odnośnik w Geometrii) zamienia wzór lub kontrolowany opis w tabelę liczb, niewiadomych i działań z odwołaniami między wierszami. Pokazuje nawiasy, role licznika i mianownika, kolejność obliczeń i wyniki pośrednie. Przykłady: `2 × (3 + 4)`, `−3^2`, `pomnóż sumę 3 i 4 przez 2`. Brakująca wartość jest wskazana nazwą.
+**Zwykły formularz zadań tekstowych** korzysta teraz także z matrycy: polecenie → role i dane → zależności → obliczenie → sprawdzenie. Obsługuje m.in. `pomnóż sumę 3 i 4 przez 2` oraz `dzielimy bok naprzeciw kąta przez bok przy kącie`. Brakujące wartości można uzupełnić bez opuszczania formularza.
 
-**Automatyczna pętla** próbuje do trzech metod odczytu i buduje macierz znanymi regułami. Zatrzymuje się przy brakach i niezgodnych interpretacjach. Eksperymentalny uczony czytnik może zaproponować role boków w ilorazie; użytkownik sprawdza je przed wynikiem liczbowym. Pętla nie trenuje się na własnych domysłach. Testy struktury i pętli: **59/59**. [Zakres, nauka i przykłady](docs/MATRYCA_ZALEZNOSCI_2026-10-16.md).
+**Automatyczna pętla** próbuje do trzech metod odczytu. Uczony czytnik ról działa automatycznie w zakresie pełnej kontrolowanej gramatyki i jawnie zdefiniowanych nazw boków; jego odpowiedź musi zgadzać się z kontrolą znaczenia. Dodatkowe słowa, sprzeczne role i brakujące dane zatrzymują obliczenie. Nowe sprawdziany integracji: 12/12 poprawnych opisów i 12/12 zatrzymanych błędnych; regresja wcześniejszych poprawnych opisów wzrosła z 12/16 do 16/16. To wynik połączenia reguł i sieci, bez zmiany głównych wag TSI. [Zakres, nauka i przykłady](docs/MATRYCA_ZALEZNOSCI_2026-10-16.md).
 
-![Matryca zależności: nawiasy, role i wyniki pośrednie](docs/matryca-zaleznosci.png)
+Osobna strona **Matryca zależności** (`/matryca`) pokazuje pełną tabelę i wyniki pośrednie. Strona **Potwierdzone poprawki** (`/lekcje`) zbiera nierozpoznane przypadki oraz poprawki użytkownika, oddzielając materiał do lekcji od odłożonego sprawdzianu. Nie zmienia automatycznie wag. [Kierunki i bank poprawek](docs/KOLEJNY_KROK_2026-10-16.md).
+
+![Wspólny formularz: od opisu przez matrycę do wyniku](docs/zadania-matryca-odczyt.png)
 
 ## PL / EN i portable
 
 Przełącznik **PL / EN** zmienia interfejs, komunikaty i opisy wyników oraz zapamiętuje wybór w przeglądarce. Wpisane dane pozostają bez zmian. Polecenia i opisy zadań tekstowych nadal muszą być po polsku; wzory i audyt nie wymagają polskiej treści.
 
-Uzupełniono tłumaczenia lekcji słów, wyników pudełka i równań oraz nowych etykiet menu. Cytowane fragmenty zadania zachowują język oryginału. Nowe osobne strony Geometria i Matryca zależności są obecnie po polsku.
+Uzupełniono tłumaczenia lekcji słów, wyników pudełka i równań oraz nowych etykiet menu. Cytowane fragmenty zadania zachowują język oryginału. Nowe osobne strony Geometria, Matryca zależności i Potwierdzone poprawki są obecnie po polsku.
 
 Przygotowano lokalną wersję **portable Windows x64 z pełnym kodem, modelami, Pythonem i bibliotekami**. Po rozpakowaniu całości: `START.bat`; zatrzymanie: `ZATRZYMAJ.bat`. Nie wymaga instalowania Pythona ani pobierania modeli. Pakiet z kodem pozostaje lokalnie; nie jest plikiem do pobrania z tego repozytorium dokumentacyjnego. [Zakres i testy portable](docs/PL_EN_PORTABLE_2026-10-16.md).
+
+Aktualizacja ZIP obejmuje również całą nową geometrię, matrycę, automatyczny sprawdzany odczyt ról, wspólny formularz i bank poprawek. Sprawdzono działanie na dołączonym Pythonie i integralność archiwum. [Aktualny zakres paczki](docs/PORTABLE_AKTUALIZACJA_2026-10-16.md). Łączny sprawdzian powiązanych funkcji matematycznych: **289/289 testów**.
 
 ![English interface: solution audit](docs/audit-en.png)
 
