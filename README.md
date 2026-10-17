@@ -29,6 +29,7 @@ Całki: wynik i wykres funkcji oraz pierwotnej.
 | Macierze | Do 6 × 6: działania, wyznacznik, odwrotność, rząd i układy równań |
 | Logika | Klasyczna i trójstanowa Kleene’a |
 | Audyt i zapis | Porównanie kolejnych równań, utracone lub dodane rozwiązania, kontrprzykłady; wskazanie miejsca błędu składni i podpowiedź |
+| Raporty | JSON do ponownego przeliczenia; samodzielny HTML do wydruku; wykrywanie zmian pliku, silnika i wyniku |
 | Nauka z poprawek | Bank potwierdzonych lekcji; kontrolowany trening dodatkowego czytnika działań, osobny sprawdzian i możliwość cofnięcia |
 
 Dashboard ma przyciski do podstron, rozwijane menu zadań, wspólne tła paneli i wyrównane przykłady. Na telefonie układ przechodzi w jedną kolumnę. Zapisy `^` i `**` są obsługiwane równolegle; wyniki pokazują zapis matematyczny i techniczny. Przełącznik PL/EN obejmuje główny warsztat; nowe działy geometrii, matrycy i poprawek pozostają częściowo po polsku. Treści zadań opisowych należy wpisywać po polsku.
@@ -38,6 +39,7 @@ Dashboard ma przyciski do podstron, rozwijane menu zadań, wspólne tła paneli 
 1. Uruchom panel i wybierz dział z menu albo przyciskiem podstrony.
 2. Wczytaj przykład lub wpisz własne dane i kliknij przycisk obliczenia.
 3. Sprawdź odczytane dane i warunki, następnie wynik. Przy prośbie o doprecyzowanie uzupełnij wskazany brak.
+4. W zadaniach tekstowych i akademickich możesz zapisać raport JSON lub HTML. Wczytanie JSON pozwala ponownie obliczyć wynik lokalnie. [Obsługa i znaczenie weryfikacji](docs/RAPORTY_OBLICZEN_2026-10-17.md).
 
 | Przykład | Oczekiwany wynik |
 |---|---|
@@ -62,7 +64,7 @@ Portable nie wymaga instalowania Pythona ani pobierania modeli. Prywatny bank le
 
 ## Aktualna weryfikacja i ograniczenia
 
-**1040 testów regresji przeszło.** Wybrana próbka znanych zadań CKE/ZPE: **10/10**; nowe warianty tej próbki: **50/50**. To sprawdzenie określonego zakresu, nie całej matematyki.
+**1060 testów regresji przeszło.** Wybrana próbka znanych zadań CKE/ZPE: **10/10**; nowe warianty tej próbki: **50/50**. To sprawdzenie określonego zakresu, nie całej matematyki.
 
 W szerszym zestawie ZPE obejmującym 204 wpisy i warianty: **41 odpowiedzi kompletnych, 5 częściowych, 158 nierozwiązanych**. Własności figur i słowa „każdy”, „może”, „musi”: **30/30 w zestawie akceptacyjnym**. Osobny zestaw nowych sformułowań: początkowo **23/24**, po poprawce słownika **24/24**. Dwanaście kontroli brakujących lub sprzecznych danych prawidłowo zatrzymano. [Zakres i znaczenie wyników](docs/WLASNOSCI_FIGUR_2026-10-17.md).
 

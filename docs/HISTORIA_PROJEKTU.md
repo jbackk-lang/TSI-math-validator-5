@@ -156,3 +156,8 @@ W działającej instalacji panel jest pod `http://127.0.0.1:8795/`. Ten adres dz
 ## 17.10.2026 — własności figur i powrót podglądu w README
 
 Rozbudowano kwantyfikatory, negację oraz dokładny model kątów i własności czworokątów. Zestaw akceptacyjny: 2/30 → 30/30. Nowy zamrożony zestaw: początkowo 23/24, po uzupełnieniu odmiany słowa 24/24. Kontrole braków/sprzeczności: 12/12. ZPE: 15 → 41 kompletnych odpowiedzi, pięć częściowych i 158 nierozwiązanych wpisów; warianty nie są niezależnymi zadaniami. Pełna regresja 1040. Przywrócono trzy podglądy w README; dwa zrzuty odświeżono do nowego układu. [Pełny opis](WLASNOSCI_FIGUR_2026-10-17.md).
+
+
+## 17.10.2026 — raporty do przekazania i odtworzenia
+
+Dodano wersjonowany JSON wejścia/wyniku/silnika oraz samodzielny HTML do wydruku. Lokalna weryfikacja ponownie oblicza zadanie w osobnym procesie; rozróżnia zmianę pliku, silnika, wyniku i limit czasu. Blokada nieaktualnego eksportu po edycji, PL/EN i CLI. Dodano 20 testów; regresja 1060. Sprawdzono rzeczywisty eksport/import i wydruk HTML. [Zakres i ograniczenia](RAPORTY_OBLICZEN_2026-10-17.md).
