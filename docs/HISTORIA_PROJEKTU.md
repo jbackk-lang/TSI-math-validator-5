@@ -161,3 +161,8 @@ Rozbudowano kwantyfikatory, negację oraz dokładny model kątów i własności 
 ## 17.10.2026 — raporty do przekazania i odtworzenia
 
 Dodano wersjonowany JSON wejścia/wyniku/silnika oraz samodzielny HTML do wydruku. Lokalna weryfikacja ponownie oblicza zadanie w osobnym procesie; rozróżnia zmianę pliku, silnika, wyniku i limit czasu. Blokada nieaktualnego eksportu po edycji, PL/EN i CLI. Dodano 20 testów; regresja 1060. Sprawdzono rzeczywisty eksport/import i wydruk HTML. [Zakres i ograniczenia](RAPORTY_OBLICZEN_2026-10-17.md).
+
+
+## 17.10.2026 — przełączanie języka geometrii i matrycy
+
+Naprawiono brak wczytywania wspólnego modułu językowego na stronach geometrii, matrycy i banku poprawek. Dodano tłumaczenia nawigacji, menu etapów, przycisków i statycznych objaśnień. Sprawdzono osiem etapów geometrii, przejście PL → EN → PL, zachowanie etapu i wpisanych danych, obliczenie matrycy, zapamiętanie języka między stronami i widok mobilny. Treści poleceń pozostają w języku oryginału; nie poszerzano gramatyki czytników.
