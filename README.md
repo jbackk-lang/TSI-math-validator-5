@@ -1,10 +1,16 @@
 # TSI-math-validator-5
 
+## Zweryfikowana diagnoza ZPE — 17.10.2026
+
+**15 kompletnych odpowiedzi, cztery częściowe i 185 nierozwiązanych przypadków** w zestawie 204 wpisów. Wcześniejsze 20/204 obejmowało również niewykonane rysunki i jedną błędną interpretację tabeli; błąd został zablokowany. Pełna regresja po poprawkach: **948 testów**.
+
+Wybrany dalszy zakres: własności figur i słowa „każdy”, „może”, „musi”. Osobny nowy sprawdzian: **2/30**, bez błędnych zaakceptowanych odpowiedzi; sześć kontroli brakujących danych zatrzymano poprawnie. To punkt odniesienia, jeszcze nie opanowany zakres. [Diagnoza, ograniczenia i następny etap](docs/DIAGNOZA_ZPE_2026-10-17.md).
+
 ## Przebudowany odczyt zadań — 17.10.2026
 
 Wspólny model zapisuje wielkości, niewiadome, relacje, warunki i cel. Dashboard pokazuje odczyt, wynik oraz fragmenty wymagające wyjaśnienia. Nowy zakres: procenty i bilanse, liczebności klas, ciągi z warunkami, kąty trapezu, stożek oraz funkcja i optymalizacja prostopadłościanu.
 
-**Sprawdzono: 10/10 znanych zadań CKE/ZPE, 50/50 nowych wariantów i 940 testów regresji.** W szerszym starszym zestawie ZPE nadal tylko 20 odpowiedzi na 204 przypadki — nie deklarujemy obsługi dowolnej treści ani wszystkich arkuszy. [Przykłady, dashboard, wyniki i ograniczenia](docs/PRZEBUDOWA_CZYTNIKA_2026-10-17.md).
+**Sprawdzono: 10/10 znanych zadań CKE/ZPE, 50/50 nowych wariantów i 940 testów regresji.** Historycznie starszy zestaw ZPE zwracał 20 odpowiedzi na 204 przypadki (późniejszy audyt: 15 kompletnych, cztery częściowe i jedna błędna interpretacja tabeli) — nie deklarujemy obsługi dowolnej treści ani wszystkich arkuszy. [Przykłady, dashboard, wyniki i ograniczenia](docs/PRZEBUDOWA_CZYTNIKA_2026-10-17.md).
 
 ## Nauka z poprawek i relacje geometryczne — 17.10.2026
 
