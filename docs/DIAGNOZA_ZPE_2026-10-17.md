@@ -1,5 +1,7 @@
 # Diagnoza odczytu zadań ZPE — 17.10.2026
 
+**Zapis historyczny sprzed rozbudowy własności figur.** [Aktualne wyniki: 41 kompletnych odpowiedzi](WLASNOSCI_FIGUR_2026-10-17.md).
+
 Przejrzano 204 zapisane przypadki z pięciu materiałów ZPE: koła i okręgi, obwody prostokątów i kwadratów, trójkąty (dwa materiały) oraz wielokąty. Zestaw obejmuje 129 numerowanych ćwiczeń, ich warianty i wyodrębnione pytania. Nie jest to 204 niezależnych zadań rozwiązywalnych wyłącznie z tekstu.
 
 ## Korekta wcześniejszego wyniku

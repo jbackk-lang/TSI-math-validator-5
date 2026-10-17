@@ -151,3 +151,8 @@ Zestawy 261, 62 i 326 obejmują częściowo te same sprawdzenia; nie należy ich
 W działającej instalacji panel jest pod `http://127.0.0.1:8795/`. Ten adres działa wyłącznie na komputerze z uruchomionym serwerem; GitHub przechowuje dokumentację, nie aplikację. W modelach językowych wykorzystywany jest również wcześniej uczony HerBERT.
 
 [Etap akademicki](ETAP_AKADEMICKI_2026-10-16.md) · [Etap kwadratowy](ETAP_KWADRATOWY_2026-10-16.md) · [Diagnostyka i wykresy](DIAGNOSTYKA_2026-10-16.md) · [Pomiary menedżera](WYNIKI_2026-10-15.md) · [Pochodzenie komponentów](POCHODZENIE.md).
+
+
+## 17.10.2026 — własności figur i powrót podglądu w README
+
+Rozbudowano kwantyfikatory, negację oraz dokładny model kątów i własności czworokątów. Zestaw akceptacyjny: 2/30 → 30/30. Nowy zamrożony zestaw: początkowo 23/24, po uzupełnieniu odmiany słowa 24/24. Kontrole braków/sprzeczności: 12/12. ZPE: 15 → 41 kompletnych odpowiedzi, pięć częściowych i 158 nierozwiązanych wpisów; warianty nie są niezależnymi zadaniami. Pełna regresja 1040. Przywrócono trzy podglądy w README; dwa zrzuty odświeżono do nowego układu. [Pełny opis](WLASNOSCI_FIGUR_2026-10-17.md).
