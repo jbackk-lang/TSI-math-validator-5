@@ -1,6 +1,6 @@
 # TSI-math-validator-5
 
-**Stan aktualny: 17 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
+**Stan aktualny: 18 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
 
 ## Podgląd
 
@@ -62,9 +62,13 @@ Aplikacja działa lokalnie na Windows przy uruchomionym serwerze: [otwórz dashb
 
 Portable nie wymaga instalowania Pythona ani pobierania modeli. Prywatny bank lekcji użytkownika nie jest dołączony. Kod źródłowy i paczka z kodem pozostają lokalnie.
 
+## Osobny eksperyment językowy
+
+Trenujemy również formułowanie wypowiedzi: twierdzenia, zaprzeczenia, pytania i wskazanie konkretnej brakującej wielkości. Uczona konstrukcja zdania współpracuje z jawnymi polami nazw, liczb i jednostek oraz kontrolą zachowania sensu. Eksperyment nie jest jeszcze włączony do dashboardu; nie oznacza swobodnej rozmowy ani mówienia głosem. [Aktualny zakres, wyniki i przykłady](docs/JEZYK_CZYTANIE_PISANIE_2026-10-18.md).
+
 ## Aktualna weryfikacja i ograniczenia
 
-**1060 testów regresji przeszło.** Wybrana próbka znanych zadań CKE/ZPE: **10/10**; nowe warianty tej próbki: **50/50**. To sprawdzenie określonego zakresu, nie całej matematyki.
+**1900 testów regresji przeszło** (1574 w podkatalogu testowym i 326 pozostałych). Wybrana próbka znanych zadań CKE/ZPE: **10/10**; nowe warianty tej próbki: **50/50**. To sprawdzenie określonego zakresu, nie całej matematyki.
 
 W szerszym zestawie ZPE obejmującym 204 wpisy i warianty: **41 odpowiedzi kompletnych, 5 częściowych, 158 nierozwiązanych**. Własności figur i słowa „każdy”, „może”, „musi”: **30/30 w zestawie akceptacyjnym**. Osobny zestaw nowych sformułowań: początkowo **23/24**, po poprawce słownika **24/24**. Dwanaście kontroli brakujących lub sprzecznych danych prawidłowo zatrzymano. [Zakres i znaczenie wyników](docs/WLASNOSCI_FIGUR_2026-10-17.md).
 

@@ -166,3 +166,13 @@ Dodano wersjonowany JSON wejścia/wyniku/silnika oraz samodzielny HTML do wydruk
 ## 17.10.2026 — przełączanie języka geometrii i matrycy
 
 Naprawiono brak wczytywania wspólnego modułu językowego na stronach geometrii, matrycy i banku poprawek. Dodano tłumaczenia nawigacji, menu etapów, przycisków i statycznych objaśnień. Sprawdzono osiem etapów geometrii, przejście PL → EN → PL, zachowanie etapu i wpisanych danych, obliczenie matrycy, zapamiętanie języka między stronami i widok mobilny. Treści poleceń pozostają w języku oryginału; nie poszerzano gramatyki czytników.
+
+
+## 18.10.2026 — eksperyment uczenia czytania i pisania
+
+Dodano nadrzędny kontroler budowy zdania, macierze części mowy i osobne modele GRU do czytania oraz formułowania tekstu. Zapisano wyniki pierwszych nieudanych prób, trzy starty kolejnych treningów i kontrolę zachowania danych. Zamiast odtwarzać liczby i jednostki z pamięci, najbezpieczniejszy wariant przekazuje je przez jawne pola i ponownie sprawdza całe zdanie. Próba 768 różnych wiązań danych: 768/768 dla każdego z trzech startów; nie jest to egzamin nieznanej gramatyki. Eksperyment pozostaje oddzielony od dashboardu i pierwotnych wag. [Wyniki, przykłady i ograniczenia](JEZYK_CZYTANIE_PISANIE_2026-10-18.md).
+
+
+### Pojemność oraz utrzymanie pamięci
+
+Porównano eksperymentalne GRU 52 628 i 253 668 parametrów na tych samych syntetycznych podziałach, po trzy starty. Większy z powtórkami: 12/12 starych i 13/13 nowych znaczeń w każdym starcie. Bez powtórek oba rozmiary: 0/12 starych. Zachowano również dokładne teksty, pierwsze nieudane próby, dane i checkpointy. Wynik nie oznacza opanowania dowolnego języka ani wymiany rdzenia produkcyjnego. Zakres regresji z dodatkowymi testami: 1900.
