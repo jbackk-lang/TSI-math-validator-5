@@ -62,13 +62,15 @@ Aplikacja działa lokalnie na Windows przy uruchomionym serwerze: [otwórz dashb
 
 Portable nie wymaga instalowania Pythona ani pobierania modeli. Prywatny bank lekcji użytkownika nie jest dołączony. Kod źródłowy i paczka z kodem pozostają lokalnie.
 
-## Osobny eksperyment językowy
+## Aktywny rdzeń i pamięć
 
-Trenujemy również formułowanie wypowiedzi: twierdzenia, zaprzeczenia, pytania i wskazanie konkretnej brakującej wielkości. Uczona konstrukcja zdania współpracuje z jawnymi polami nazw, liczb i jednostek oraz kontrolą zachowania sensu. Eksperyment nie jest jeszcze włączony do dashboardu; nie oznacza swobodnej rozmowy ani mówienia głosem. [Aktualny zakres, wyniki i przykłady](docs/JEZYK_CZYTANIE_PISANIE_2026-10-18.md).
+Właściwy rdzeń TSI został poszerzony **H256 → H512**: z **784 338 do 2 168 274 parametrów** wraz ze współdzieloną pamięcią i logiką. Transfer zachował wyniki wcześniejszych prób PL/EN i wektorowych; nie oznacza automatycznego zdobycia nowych umiejętności. Osobny większy moduł językowy formułuje odpowiedzi w kontrolowanym zakresie.
+
+Trwała lokalna pamięć przywołuje zatwierdzone poprawki po ponownym uruchomieniu, przelicza wynik i zatrzymuje sprzeczne wpisy. Błędów nie uznaje automatycznie za wiedzę, a sprawdziany pozostają wyłączone z podpowiedzi. Nowy odczyt działa w istniejących Zadaniach tekstowych; strona Poprawki TSI służy zatwierdzaniu poprawek programu. [Stan, testy i ograniczenia](docs/RDZEN_I_PAMIEC_2026-10-18.md).
 
 ## Aktualna weryfikacja i ograniczenia
 
-**1900 testów regresji przeszło** (1574 w podkatalogu testowym i 326 pozostałych). Wybrana próbka znanych zadań CKE/ZPE: **10/10**; nowe warianty tej próbki: **50/50**. To sprawdzenie określonego zakresu, nie całej matematyki.
+**1984 różne testy przeszły.** Pełna regresja po wymianie rdzenia: 1982/1982; dwa dodatkowe testy raportów oraz powtórzone testy raportów: 22/22. Wybrana próbka znanych zadań CKE/ZPE: **10/10**; nowe warianty tej próbki: **50/50**. To sprawdzenie określonego zakresu, nie całej matematyki.
 
 W szerszym zestawie ZPE obejmującym 204 wpisy i warianty: **41 odpowiedzi kompletnych, 5 częściowych, 158 nierozwiązanych**. Własności figur i słowa „każdy”, „może”, „musi”: **30/30 w zestawie akceptacyjnym**. Osobny zestaw nowych sformułowań: początkowo **23/24**, po poprawce słownika **24/24**. Dwanaście kontroli brakujących lub sprzecznych danych prawidłowo zatrzymano. [Zakres i znaczenie wyników](docs/WLASNOSCI_FIGUR_2026-10-17.md).
 

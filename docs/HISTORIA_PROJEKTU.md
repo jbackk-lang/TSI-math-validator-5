@@ -176,3 +176,8 @@ Dodano nadrzędny kontroler budowy zdania, macierze części mowy i osobne model
 ### Pojemność oraz utrzymanie pamięci
 
 Porównano eksperymentalne GRU 52 628 i 253 668 parametrów na tych samych syntetycznych podziałach, po trzy starty. Większy z powtórkami: 12/12 starych i 13/13 nowych znaczeń w każdym starcie. Bez powtórek oba rozmiary: 0/12 starych. Zachowano również dokładne teksty, pierwsze nieudane próby, dane i checkpointy. Wynik nie oznacza opanowania dowolnego języka ani wymiany rdzenia produkcyjnego. Zakres regresji z dodatkowymi testami: 1900.
+
+
+## 18.10.2026 — wymiana właściwego rdzenia i pamięć trwała
+
+Poszerzono i aktywowano właściwy WordVectorGeometryCore H256 → H512, zachowując oryginalne checkpointy i migrując optymalizator oraz odczyt relacji. Rdzeń z pamięcią/logiką: 784 338 → 2 168 274 parametrów. Transfer: 420 poleceń PL/EN, 4096 prób wektorowych i 512 relacji bez różnic w tych próbach. Oddzielny moduł językowy został podłączony do istniejących Zadań tekstowych, bez nowej strony. Dodano lokalną pamięć znaczeń, potwierdzonych poprawek i błędów z historią i kontrolą konfliktów; sprawdziany nie służą jako podpowiedzi. [Aktualny stan i ograniczenia](RDZEN_I_PAMIEC_2026-10-18.md).
