@@ -1,6 +1,26 @@
 # TSI-math-validator-5
 
+## Aktualizacja 18.10.2026 — nauka i historia pracy
+
+Panel pokazuje rozpoznane dane i szukane, oferuje stopniowane podpowiedzi i sprawdzanie własnych kroków. Historia lokalna odtwarza dane i rysunki, a wykryte błędy tworzą listę powtórek. Przykłady mają grupy i filtr trudności; ustawienia zaawansowane są zwijane. [Obsługa i zakres](docs/WARSZTAT_NAUKI_2026-10-18.md).
+
+
 **Stan aktualny: 18 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
+
+### Najnowsze funkcje
+
+- **Warsztat nauki:** rozpoznane dane i szukane, zmiana pojedynczej liczby, trzy podpowiedzi i rozwiązanie na życzenie. Kontrola własnych przekształceń wskazuje pierwszy problem; kontrola funkcji pierwotnej obejmuje również dziedzinę.
+- **Historia i powtórki:** do 30 obliczeń w przeglądarce, odtwarzanie rysunków, ponowne wczytanie danych i eksport JSON. Lista powtórek wynika z błędów własnego rozwiązania.
+- **Całki edukacyjne:** sześć interaktywnych przykładów, sumy przybliżone, pole ze znakiem i geometryczne, przesuwanie stałej C oraz ćwiczenia. [Opis](docs/NAUKA_CALEK_2026-10-18.md).
+- **Rysunki:** wspólne generowanie ilustracji z rozpoznanych danych i podgląd figury ze współrzędnych. [Zakres](docs/AUTOMATYCZNE_RYSUNKI_2026-10-18.md).
+- **Bank poprawek:** panel z hasłem, wycofanie błędnej lekcji, reset i przywrócenie kopii. [Obsługa](docs/BANK_POPRAWEK_I_HASLO_2026-10-18.md).
+- **Laboratorium VQLS:** lokalny prototyp porównania solverów na symulatorze; bez użycia QPU. [Warunki i wyniki](docs/VQLS_PROTOTYP_2026-10-18.md).
+
+Najnowszy zestaw regresji warsztatu: **89/89 testów**. Dodatkowo sprawdzono w przeglądarce podpowiedzi, zmianę liczby, pierwszy błędny krok, funkcję pierwotną, historię z rysunkiem, filtry i przełącznik PL/EN. Wynik dotyczy tego zakresu, nie dowolnych zadań.
+
+![Warsztat nauki i sprawdzanie funkcji pierwotnej](docs/warsztat-nauki-calki.png)
+
+![Grupy przykładów, odczyt danych i historia — interfejs angielski](docs/warsztat-zadania-en.png)
 
 ## Podgląd
 
@@ -79,3 +99,19 @@ TSI nie rozumie jeszcze dowolnego opisu. Nierozpoznany warunek, brak ilustracji 
 Uczenie podczas użytkowania wymaga potwierdzonych poprawek i przejścia osobnego sprawdzianu. Nie oznacza samodzielnego opanowywania dowolnych tematów. Oryginalne modele pozostają zachowane.
 
 [Historia projektu i wcześniejsze etapy](docs/HISTORIA_PROJEKTU.md) · [Szczegółowa diagnoza ZPE](docs/DIAGNOZA_ZPE_2026-10-17.md)
+
+### Rysunki do zadań
+
+Automatyczne osie liczbowe, schematy figur i pudełek, kolejność działań oraz wykresy funkcji celu na podstawie rozpoznanych danych. [Zakres i ograniczenia](docs/AUTOMATYCZNE_RYSUNKI_2026-10-18.md).
+
+### Nauka całek
+
+Interaktywne pole pod wykresem, sumy prostokątów i trapezów, funkcja pierwotna ze stałą C oraz ćwiczenia z informacją o błędnym kroku. [Zakres pracowni](docs/NAUKA_CALEK_2026-10-18.md).
+
+### Układy liniowe i VQLS — prototyp lokalny
+
+Porównanie dokładnego solvera z idealną symulacją VQLS dla układów 1–4 niewiadomych. Wykrywanie nieliniowości, kontrola uwarunkowania i sprawdzenie w pierwotnych równaniach. Bez QPU i bez deklaracji przewagi kwantowej. [Zakres, wynik i ograniczenia](docs/VQLS_PROTOTYP_2026-10-18.md).
+
+### Kontrola poprawek
+
+Bank poprawek chroniony hasłem: wycofanie pojedynczej lekcji, reset z kopią i przywracanie kopii. [Obsługa i zakres](docs/BANK_POPRAWEK_I_HASLO_2026-10-18.md). W Geometrii, etap 5, rysunek odświeża się wraz ze współrzędnymi.

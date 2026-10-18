@@ -181,3 +181,8 @@ Porównano eksperymentalne GRU 52 628 i 253 668 parametrów na tych samych synte
 ## 18.10.2026 — wymiana właściwego rdzenia i pamięć trwała
 
 Poszerzono i aktywowano właściwy WordVectorGeometryCore H256 → H512, zachowując oryginalne checkpointy i migrując optymalizator oraz odczyt relacji. Rdzeń z pamięcią/logiką: 784 338 → 2 168 274 parametrów. Transfer: 420 poleceń PL/EN, 4096 prób wektorowych i 512 relacji bez różnic w tych próbach. Oddzielny moduł językowy został podłączony do istniejących Zadań tekstowych, bez nowej strony. Dodano lokalną pamięć znaczeń, potwierdzonych poprawek i błędów z historią i kontrolą konfliktów; sprawdziany nie służą jako podpowiedzi. [Aktualny stan i ograniczenia](RDZEN_I_PAMIEC_2026-10-18.md).
+
+
+## 18 października 2026 — warsztat nauki, całki i zarządzanie poprawkami
+
+Dodano rozpoznane dane, podpowiedzi, kontrolę własnej pracy i dziedziny funkcji pierwotnej, historię lokalną z odtwarzaniem ilustracji oraz powtórki. Uporządkowano przykłady i zwinięto ustawienia zaawansowane. Rozszerzono edukacyjne całki, wspólne rysunki, ochronę banku hasłem i cofanie zmian z kopii. Przygotowano ograniczony prototyp VQLS na symulatorze. Najnowsza regresja warsztatu: 89/89; przebieg użytkownika dodatkowo sprawdzony w przeglądarce. Szczegóły znajdują się w dokumentach z datą 2026-10-18.
