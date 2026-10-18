@@ -12,4 +12,4 @@ Powtórki wynikają z wykrytych błędów własnego rozwiązania. Terminy są wi
 
 Przykłady pogrupowano tematycznie i dodano filtr trudności. Raporty, porównanie solverów i ustawienia nauki zwinięto w sekcje. Rysunki zadań i zapisanych obliczeń korzystają ze wspólnych funkcji rysujących.
 
-Weryfikacja: 18 testów sprawdzania własnej pracy oraz testy interpretacji, podpowiedzi i jednoznacznej zmiany liczby. Zmiana obejmuje aplikację źródłową i rozpakowaną wersję portable; archiwum ZIP wymaga osobnego przebudowania.
+Weryfikacja: 18 testów sprawdzania własnej pracy oraz testy interpretacji, podpowiedzi i jednoznacznej zmiany liczby. Zmiana obejmuje aplikację źródłową, rozpakowaną wersję portable i pełne archiwum ZIP z kodem oraz modelami, zaktualizowane 18.10.2026.
