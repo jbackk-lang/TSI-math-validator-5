@@ -1,11 +1,29 @@
 # TSI-math-validator-5
 
+## Aktualizacja 19 października 2026 — równania, wykresy i import
+
+**Działa lokalnie w warsztacie:** analiza wielomianów i funkcji wymiernych, dziedzina z wykluczeniami, zera, pochodna, wzrost i spadek, ekstrema, asymptoty i dziury w wykresie. Wykres obu stron równania, opcjonalna pochodna oraz aktualizacja po zmianie wzoru.
+
+**Zdjęcie lub dokument → korekta → analiza:** import PDF z wyborem strony, TXT/MD, DOCX i zdjęć; wklejanie zdjęcia ze schowka. Edytowalny odczyt, osobne pole korekty i mini klawiatura matematyczna. OCR działa lokalnie i wymaga sprawdzenia znaków przed analizą.
+
+**Aktualny TSI z 19 października:** wyuczony czytnik operacji i argumentów oraz matryce językowe. Opcjonalny moduł TSI opisuje kształt próbek funkcji. Dokładne własności nadal wyznaczają solvery.
+
+[Instrukcja, zakres, wyniki testów i ograniczenia](docs/EQUATION_ANALYSIS_2026-10-19.md). Zestawy sprawdzeń: analiza **27/27**, czytnik **42/42**, import **8/8**, przeglądarka **10/10** i import z korektą **6/6**. Portable z wcześniejszej partii nie zawiera jeszcze tej aktualizacji.
+
+![Import równania, korekta i analiza](docs/import-korekta-rownania.png)
+
+
+## Aktualizacja 18 października 2026 — czytnik ogólnej TSI
+
+W zadaniach tekstowych działa nowa warstwa TSI: polecenia działań PL/EN, role liczb, kolejność kroków i odczyt źródła z pytaniem. Wspólne wagi H512 zachowano; dotychczasowe solvery i wykresy pozostają aktywne. [Zakres, przykłady i testy podmiany](docs/UNIVERSAL_TSI_READER_2026-10-18.md).
+
+
 ## Aktualizacja 18.10.2026 — nauka i historia pracy
 
 Panel pokazuje rozpoznane dane i szukane, oferuje stopniowane podpowiedzi i sprawdzanie własnych kroków. Historia lokalna odtwarza dane i rysunki, a wykryte błędy tworzą listę powtórek. Przykłady mają grupy i filtr trudności; ustawienia zaawansowane są zwijane. [Obsługa i zakres](docs/WARSZTAT_NAUKI_2026-10-18.md).
 
 
-**Stan aktualny: 18 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
+**Stan aktualny: 19 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
 
 ### Najnowsze funkcje
 
@@ -115,3 +133,14 @@ Porównanie dokładnego solvera z idealną symulacją VQLS dla układów 1–4 n
 ### Kontrola poprawek
 
 Bank poprawek chroniony hasłem: wycofanie pojedynczej lekcji, reset z kopią i przywracanie kopii. [Obsługa i zakres](docs/BANK_POPRAWEK_I_HASLO_2026-10-18.md). W Geometrii, etap 5, rysunek odświeża się wraz ze współrzędnymi.
+
+
+## Warsztat — podgląd przykładów i szybkość, 18 października 2026
+
+Kliknięcie przykładu od razu pokazuje jego cel i równanie, zaznacza wybrany przycisk oraz usuwa wynik poprzedniego zadania. Wynik i wykres pojawiają się po obliczeniu. Podczas trwającego obliczenia wybór przykładu jest zablokowany, aby poprzedni wynik nie nadpisał nowego wyboru. Komunikaty podglądu działają PL/EN.
+
+Dla jawnych obsługiwanych poleceń i wielomianów stopnia do 6 dodano ścieżkę korzystającą bezpośrednio z istniejącego solvera i danych wykresu. Nie uruchamia ona ciężkiego wyboru narzędzia ani nie zapisuje zbędnego PNG dla wykresu rysowanego przez dashboard. Zmieniony wzór jest rzeczywiście przeliczany; nie używa zapisanej odpowiedzi przykładu. Pozostałe polecenia zachowują dotychczasową ścieżkę. Mianowniki zawierające x i inne konstrukcje wymagające szerszej kontroli dziedziny nie są przejmowane przez tę optymalizację.
+
+Pomiar HTTP dla x²−64: przed zmianą 5.527 s; pierwsze obliczenie po ponownym uruchomieniu 2.539 s. Trzy kolejne sprawdzone zadania: 0.008–0.018 s. Są to pojedyncze pomiary lokalne, nie gwarancja czasu dla dowolnego zadania.
+
+Weryfikacja: 19/19 testów szybkiej ścieżki; cztery poprawne odpowiedzi HTTP (równanie z wykresem, same pierwiastki, sam wykres, zmienione równanie x²−81). Sprawdzono też w przeglądarce natychmiastową zmianę opisu bez uruchamiania analizy i rzeczywiste obliczenie pierwiastków −8 i 8 z wykresem.
