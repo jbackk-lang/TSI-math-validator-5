@@ -4,6 +4,8 @@
 
 **Działa lokalnie w warsztacie:** analiza wielomianów i funkcji wymiernych, dziedzina z wykluczeniami, zera, pochodna, wzrost i spadek, ekstrema, asymptoty i dziury w wykresie. Wykres obu stron równania, opcjonalna pochodna oraz aktualizacja po zmianie wzoru.
 
+**Opis połączony z wykresem:** klikane miejsca zerowe, ekstrema, przedziały i asymptoty. **Sprawdzanie własnych kroków:** ocena od aktualnego równania, pierwszy problem, podpowiedź i osobno świadek utraty lub dodania rozwiązań; PL/EN. Dodatkowe testy przeglądarki: **10/10**.
+
 **Zdjęcie lub dokument → korekta → analiza:** import PDF z wyborem strony, TXT/MD, DOCX i zdjęć; wklejanie zdjęcia ze schowka. Edytowalny odczyt, osobne pole korekty i mini klawiatura matematyczna. OCR działa lokalnie i wymaga sprawdzenia znaków przed analizą.
 
 **Aktualny TSI z 19 października:** wyuczony czytnik operacji i argumentów oraz matryce językowe. Opcjonalny moduł TSI opisuje kształt próbek funkcji. Dokładne własności nadal wyznaczają solvery.

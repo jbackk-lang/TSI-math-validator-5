@@ -39,3 +39,12 @@ Odczyt lokalny, bez wysyłania dokumentów do usług zewnętrznych. PDF z tekste
 To weryfikacja tego zakresu, a nie całej matematyki. Kopie poprzednich plików zachowano lokalnie. Ta aktualizacja dotyczy folderu roboczego; archiwum portable nie zostało w tej partii przebudowane.
 
 ![Import i korekta równania](import-korekta-rownania.png)
+
+
+## Powiązanie opisu z wykresem i sprawdzanie kroków
+
+Kliknij miejsce zerowe lub ekstremum, aby zaznaczyć punkt na wykresie. Kliknięcie przedziału monotoniczności podświetla jego widoczną część; kliknięcie asymptoty zaznacza prostą lub dodatkowy przebieg. Przycisk **Usuń zaznaczenie** przywraca zwykły widok. Punkt poza przedziałem osi x wymaga zmiany zakresu wykresu.
+
+Sekcja **Sprawdź moje rozwiązanie krok po kroku** porównuje równania z aktualnym zadaniem. Jeśli wpisano sam wzór, punktem wyjścia jest równanie wzór = 0. Wpisz kolejne równania w osobnych wierszach. Panel wskazuje pierwsze niepotwierdzone przejście, rozróżnia utracone i dodane rozwiązania, udostępnia zwijaną podpowiedź i osobno dowód problemu. Nierozstrzygniętego przejścia nie nazywa błędem. Poprawna sekwencja nie oznacza automatycznie zakończenia zadania. Zmiana wzoru lub kroków usuwa poprzednią ocenę. Zakres: kolejne równania jednej zmiennej, według istniejącego audytora; nie dowolne dowody matematyczne.
+
+Dodatkowe **10/10 kontroli przeglądarki**: przedział, minimum, usuwanie zaznaczenia, asymptota pionowa i pozioma, utrata rozwiązania z powiązaniem do zadania, zwijany świadek, poprawne kroki, usuwanie starej oceny, angielski. Ponownie przeszły **27/27 prób analizy**. Przykład: z `x*(x-1)=0` do `x-1=0` usuwa rozwiązanie x=0; panel wskazuje pierwszy taki krok.
