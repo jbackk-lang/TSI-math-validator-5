@@ -2,6 +2,8 @@
 
 ## Aktualizacja 20 października 2026 — tabele, powtórki i funkcje
 
+**Analiza całek:** wykres funkcji podcałkowej i pierwotnej, kontrola pochodną i dziedziną, granice z `pi`, wartość ze znakiem oraz osobno pole geometryczne. Osobliwości i wykluczenia oryginalnego zapisu są wskazywane. [Obsługa, przykłady i zakres](docs/INTEGRAL_ANALYSIS_2026-10-20.md). Sprawdzenie: **9 prób obliczeń i 5 kontroli przeglądarki**.
+
 - **Edytowalne tabele przykładów pod tematami:** nazwy i dane, dopisywanie własnych zadań, wczytywanie, usuwanie oraz przywracanie domyślnych. Zapis osobno dla każdego tematu w tej przeglądarce; PL/EN.
 - **Powtórki z błędów:** po wykryciu utraty lub dodania rozwiązania panel proponuje warianty z innymi liczbami, sprawdza odpowiedź i zapisuje postęp. Dwie kolejne poprawne pierwsze odpowiedzi na różnych wariantach przesuwają powtórkę o dobę.
 - **Szersza analiza funkcji:** `sqrt`, `log`, `exp`, `sin`, `cos`, `tan`, granice i klikane przedziały znaku. Dla funkcji elementarnych przebieg zmienności i znak są analizowane w wybranym oknie, z kontrolą dziedziny. Trygonometria: argument `a*x+b`, kąty w radianach.
