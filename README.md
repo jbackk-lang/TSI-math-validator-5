@@ -1,5 +1,16 @@
 # TSI-math-validator-5
 
+## Aktualizacja 20 października 2026 — tabele, powtórki i funkcje
+
+- **Edytowalne tabele przykładów pod tematami:** nazwy i dane, dopisywanie własnych zadań, wczytywanie, usuwanie oraz przywracanie domyślnych. Zapis osobno dla każdego tematu w tej przeglądarce; PL/EN.
+- **Powtórki z błędów:** po wykryciu utraty lub dodania rozwiązania panel proponuje warianty z innymi liczbami, sprawdza odpowiedź i zapisuje postęp. Dwie kolejne poprawne pierwsze odpowiedzi na różnych wariantach przesuwają powtórkę o dobę.
+- **Szersza analiza funkcji:** `sqrt`, `log`, `exp`, `sin`, `cos`, `tan`, granice i klikane przedziały znaku. Dla funkcji elementarnych przebieg zmienności i znak są analizowane w wybranym oknie, z kontrolą dziedziny. Trygonometria: argument `a*x+b`, kąty w radianach.
+
+[Instrukcja, zakres i wyniki weryfikacji](docs/TABLES_PRACTICE_FUNCTIONS_2026-10-20.md). Nowe kontrole: tabele tematów **18/18**, powtórki **5/5**, przypadki funkcji **8/8**, znak i ograniczenia **5/5**, obsługa funkcji w przeglądarce **6/6**; wcześniejsza analiza **27/27**. Paczka portable nie zawiera jeszcze tej partii.
+
+![Edytowalne przykłady całek](docs/edytowalne-przyklady.png)
+
+
 ## Aktualizacja 19 października 2026 — równania, wykresy i import
 
 **Działa lokalnie w warsztacie:** analiza wielomianów i funkcji wymiernych, dziedzina z wykluczeniami, zera, pochodna, wzrost i spadek, ekstrema, asymptoty i dziury w wykresie. Wykres obu stron równania, opcjonalna pochodna oraz aktualizacja po zmianie wzoru.
@@ -25,7 +36,7 @@ W zadaniach tekstowych działa nowa warstwa TSI: polecenia działań PL/EN, role
 Panel pokazuje rozpoznane dane i szukane, oferuje stopniowane podpowiedzi i sprawdzanie własnych kroków. Historia lokalna odtwarza dane i rysunki, a wykryte błędy tworzą listę powtórek. Przykłady mają grupy i filtr trudności; ustawienia zaawansowane są zwijane. [Obsługa i zakres](docs/WARSZTAT_NAUKI_2026-10-18.md).
 
 
-**Stan aktualny: 19 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
+**Stan aktualny: 20 października 2026.** Lokalny warsztat matematyczny: odczytuje wybrane polecenia, buduje model zadania, oblicza wynik i pokazuje sprawdzenie. Interfejs łączy uczone czytniki TSI, kontrolowane reguły i dokładne obliczenia SymPy.
 
 ### Najnowsze funkcje
 
