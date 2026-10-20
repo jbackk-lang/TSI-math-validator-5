@@ -2,6 +2,8 @@
 
 ## Aktualizacja 20 października 2026 — tabele, powtórki i funkcje
 
+**Sprawdzian i trening odczytu akademickiego:** obecny czytnik 0/24 nowych kontrolowanych poleceń; nowy uczony moduł 18/24; narzędzia po podaniu prawidłowych danych 24/24. Kandydat nie osiągnął progu 22/24 i nie został wdrożony. [Rozdzielenie odczytu, rachunku i objaśnień](docs/ACADEMIC_READER_TRAINING_2026-10-20.md).
+
 **Analiza całek:** wykres funkcji podcałkowej i pierwotnej, kontrola pochodną i dziedziną, granice z `pi`, wartość ze znakiem oraz osobno pole geometryczne. Osobliwości i wykluczenia oryginalnego zapisu są wskazywane. [Obsługa, przykłady i zakres](docs/INTEGRAL_ANALYSIS_2026-10-20.md). Sprawdzenie: **9 prób obliczeń i 5 kontroli przeglądarki**.
 
 - **Edytowalne tabele przykładów pod tematami:** nazwy i dane, dopisywanie własnych zadań, wczytywanie, usuwanie oraz przywracanie domyślnych. Zapis osobno dla każdego tematu w tej przeglądarce; PL/EN.
