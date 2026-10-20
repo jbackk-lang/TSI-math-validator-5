@@ -2,7 +2,9 @@
 
 ## Aktualizacja 20 października 2026 — tabele, powtórki i funkcje
 
-**Sprawdzian i trening odczytu akademickiego:** obecny czytnik 0/24 nowych kontrolowanych poleceń; nowy uczony moduł 18/24; narzędzia po podaniu prawidłowych danych 24/24. Kandydat nie osiągnął progu 22/24 i nie został wdrożony. [Rozdzielenie odczytu, rachunku i objaśnień](docs/ACADEMIC_READER_TRAINING_2026-10-20.md).
+**Wspólny moduł matryc TSI 0.5:** słownik i wymagane dane są wagami tego samego checkpointu co transformer relacji; uczona warstwa przejść rozpoznaje role oraz negację. H512 pozostaje aktywny. Obsługiwane cele PL/EN mogą tworzyć kilka sprawdzanych kroków, z trwałym zapisem i ponownym audytem. Poprawiono rozdzielanie całek oznaczonych i nieoznaczonych, również w poleceniach przeciwnych.
+
+**Potwierdzone wyniki:** 118/118 odłożonych kombinacji znanych pojęć i danych, zero błędnych akceptacji; 57/57 testów modułu, 12/12 wdrożenia oraz 8/8 nowych kontroli paneli PL/EN. Wcześniejsze relacje zachowane: 960/960, 720/720 i 640/640. To kontrola obsługiwanego zakresu, nie dowód rozumienia dowolnego opisu. [Wyniki i zakres](docs/TSI_MATRIX_CORE_2026-10-20.md). [Poprzednie próby i stan](docs/archiwum/README_before_matrix_weights_2026-10-20.md).
 
 **Analiza całek:** wykres funkcji podcałkowej i pierwotnej, kontrola pochodną i dziedziną, granice z `pi`, wartość ze znakiem oraz osobno pole geometryczne. Osobliwości i wykluczenia oryginalnego zapisu są wskazywane. [Obsługa, przykłady i zakres](docs/INTEGRAL_ANALYSIS_2026-10-20.md). Sprawdzenie: **9 prób obliczeń i 5 kontroli przeglądarki**.
 
@@ -23,7 +25,7 @@
 
 **Zdjęcie lub dokument → korekta → analiza:** import PDF z wyborem strony, TXT/MD, DOCX i zdjęć; wklejanie zdjęcia ze schowka. Edytowalny odczyt, osobne pole korekty i mini klawiatura matematyczna. OCR działa lokalnie i wymaga sprawdzenia znaków przed analizą.
 
-**Aktualny TSI z 19 października:** wyuczony czytnik operacji i argumentów oraz matryce językowe. Opcjonalny moduł TSI opisuje kształt próbek funkcji. Dokładne własności nadal wyznaczają solvery.
+**Aktualny TSI:** wyuczony czytnik operacji i argumentów oraz matryce językowe. Opcjonalny moduł TSI opisuje kształt próbek funkcji. Dokładne własności nadal wyznaczają solvery.
 
 [Instrukcja, zakres, wyniki testów i ograniczenia](docs/EQUATION_ANALYSIS_2026-10-19.md). Zestawy sprawdzeń: analiza **27/27**, czytnik **42/42**, import **8/8**, przeglądarka **10/10** i import z korektą **6/6**. Portable z wcześniejszej partii nie zawiera jeszcze tej aktualizacji.
 
@@ -57,6 +59,21 @@ Najnowszy zestaw regresji warsztatu: **89/89 testów**. Dodatkowo sprawdzono w p
 
 ![Grupy przykładów, odczyt danych i historia — interfejs angielski](docs/warsztat-zadania-en.png)
 
+## Jak zbudowane jest TSI
+
+Czytniki, matryce i rdzeń współpracują zależnie od rodzaju zadania.
+
+| Element | Zadanie |
+|---|---|
+| Czytniki | Rozpoznają obsługiwane cele poleceń i dane wejściowe. |
+| Matryce | Porządkują role słów, zależności, jednostki i warunki. |
+| Rdzeń TSI | Wyuczone rozpoznawanie; główny model H512 ma 2 054 186 parametrów. |
+| Solvery | Wykonują obliczenia matematyczne. |
+| Kontrola wyniku | Sprawdza wynik i warunki w obsługiwanym zakresie. |
+| Dashboard | Przyjmuje zadania, umożliwia korektę i pokazuje wyniki oraz grafikę. |
+
+**Stan treningu na 20 października 2026:** ostatni trening dotyczył dodatkowego czytnika poleceń akademickich, a nie głównego rdzenia. Kandydat uzyskał 18/24 i nie został wdrożony; wagi głównego rdzenia pozostały bez zmian. [Szczegóły sprawdzianu](docs/ACADEMIC_READER_TRAINING_2026-10-20.md).
+
 ## Podgląd
 
 Główny warsztat: wybór zadania, formularz, wynik i wykres.
@@ -87,7 +104,7 @@ Całki: wynik i wykres funkcji oraz pierwotnej.
 | Raporty | JSON do ponownego przeliczenia; samodzielny HTML do wydruku; wykrywanie zmian pliku, silnika i wyniku |
 | Nauka z poprawek | Bank potwierdzonych lekcji; kontrolowany trening dodatkowego czytnika działań, osobny sprawdzian i możliwość cofnięcia |
 
-Dashboard ma przyciski do podstron, rozwijane menu zadań, wspólne tła paneli i wyrównane przykłady. Na telefonie układ przechodzi w jedną kolumnę. Zapisy `^` i `**` są obsługiwane równolegle; wyniki pokazują zapis matematyczny i techniczny. Przełącznik PL/EN obejmuje również nawigację, menu etapów i przyciski geometrii oraz matrycy. Część szczegółowych wyników i objaśnień nowych działów pozostaje po polsku. Treści zadań opisowych należy wpisywać po polsku.
+Dashboard ma przyciski do podstron, rozwijane menu zadań, wspólne tła paneli i wyrównane przykłady. Na telefonie układ przechodzi w jedną kolumnę. Zapisy `^` i `**` są obsługiwane równolegle; wyniki pokazują zapis matematyczny i techniczny. Przełącznik PL/EN obejmuje również nawigację, menu etapów i przyciski geometrii oraz matrycy. Część szczegółowych wyników i objaśnień nowych działów pozostaje po polsku. Klasyczne zadania opisowe geometrii należy wpisywać po polsku; nowy czytnik znanych celów obliczeniowych obsługuje także angielski.
 
 ## Jak korzystać
 
@@ -161,3 +178,36 @@ Dla jawnych obsługiwanych poleceń i wielomianów stopnia do 6 dodano ścieżk�
 Pomiar HTTP dla x²−64: przed zmianą 5.527 s; pierwsze obliczenie po ponownym uruchomieniu 2.539 s. Trzy kolejne sprawdzone zadania: 0.008–0.018 s. Są to pojedyncze pomiary lokalne, nie gwarancja czasu dla dowolnego zadania.
 
 Weryfikacja: 19/19 testów szybkiej ścieżki; cztery poprawne odpowiedzi HTTP (równanie z wykresem, same pierwiastki, sam wykres, zmienione równanie x²−81). Sprawdzono też w przeglądarce natychmiastową zmianę opisu bez uruchamiania analizy i rzeczywiste obliczenie pierwiastków −8 i 8 z wykresem.
+
+
+## Geometria i tryby pracy — 20 października 2026
+
+**Obliczenia / Wiadomości / Nauka z TSI** mają wspólne kolory w geometrii, równaniach, całkach i zadaniach tekstowych. Geometria: 15 figur i brył, jednostki, schematy, wzory, wskazówki oraz sprawdzanie odpowiedzi ucznia; poziomy Standard / Zaawansowana. Testy obliczeń: **68/68**. [Zakres i działanie nauczyciela](docs/GEOMETRY_TEACHER_2026-10-20.md).
+
+
+## Stałe, duży słownik i nauczyciel — 20 października 2026
+
+**Słownik** po **Akademickie**: **3242 haseł**, wyszukiwanie całej bazy, filtry języka i przykładów, źródła oraz stronicowanie. 841 haseł ma polską nazwę; pozostałe są oznaczone jako angielskie. 30 haseł ma opracowane przykłady.
+
+Przyciski **e, π, eˣ**, przykłady całek z tymi stałymi i równoważne zapisy e / E / exp(1). Geometria wyznacza wybraną niewiadomą i wskazuje pierwszy błędny krok rozwiązania ucznia. [Zakres, pochodzenie bazy i wyniki kontroli](docs/MATH_REFERENCE_2026-10-20.md).
+
+
+### Słownik i przykład praktyczny — 20.10.2026
+
+Słownik: 3242 hasła, alfabet z polskimi literami, wyszukiwanie i 2932 rozwiniętych opisów (654 po polsku). Rozwinięcia źródłowe zawierają odnośniki do autorów i licencji; brakujące opracowania są oznaczone.
+
+Geometria zawiera edytowalny przykład koperty: siatka, papier, zakładki zamykające i klejowe, pola po złożeniu oraz wyznaczanie jednej niewiadomej z wybranego pola. [Opis przykładu](docs/ENVELOPE_EXAMPLE_2026-10-20.md).
+
+
+
+Dodatkowe źródła: 129 haseł ma odnośniki do Wolfram MathWorld. Są to źródła online; treści MathWorld nie są kopiowane do paczki. Pozostało 310 haseł bez rozwinięcia lokalnego. [Raport źródeł](docs/GLOSSARY_SOURCES_2026-10-20.md).
+
+
+### Powtórki po błędach — geometria
+
+W trybie „Nauka z TSI” błędna odpowiedź lub krok prowadzi do podobnego ćwiczenia z nowymi danymi. Panel zapisuje lokalnie postęp, pozwala wznowić zadanie po odświeżeniu i oznacza użycie podglądu rozwiązania. Zalicza pełne rozwiązanie, nie sam poprawny początek. [Zakres i sprawdzenie](docs/GEOMETRY_PRACTICE_2026-10-20.md).
+
+
+### Zadania, bryły i fizyka
+
+Geometria łączy odczyt oznaczonych danych z potwierdzeniem interpretacji, opisanym rysunkiem i kontrolą kroków. Obsługuje 19 modeli, w tym beczkę, przestrzenny szkielet i dwa warianty koperty; ostrosłup można porównać z modelem Wielkiej Piramidy w Gizie. Osobny dział Fizyka zawiera cztery modele mechaniki pojedynczego pręta. [Zakres, założenia i testy](docs/GEOMETRY_PHYSICS_2026-10-20.md).
