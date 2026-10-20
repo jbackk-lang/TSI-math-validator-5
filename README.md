@@ -1,5 +1,8 @@
 # TSI-math-validator-5
 
+**Stan dokumentacji: 21 października 2026.** Geometria: 19 modeli, powtórki po błędach i rysunki; osobny dział Fizyka; słownik: 3242 hasła, 2932 rozwinięcia i 129 odnośników MathWorld. Szczegóły poniżej.
+
+
 ## Aktualizacja 20 października 2026 — tabele, powtórki i funkcje
 
 **Wspólny moduł matryc TSI 0.5:** słownik i wymagane dane są wagami tego samego checkpointu co transformer relacji; uczona warstwa przejść rozpoznaje role oraz negację. H512 pozostaje aktywny. Obsługiwane cele PL/EN mogą tworzyć kilka sprawdzanych kroków, z trwałym zapisem i ponownym audytem. Poprawiono rozdzielanie całek oznaczonych i nieoznaczonych, również w poleceniach przeciwnych.
