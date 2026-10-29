@@ -72,14 +72,18 @@ Pełna wersja z modelem TSI pozostaje lokalna. Publiczne demo zawiera narzędzia
 
 [Zakres demo i sprawdzenia](docs/DEMO_2026-10-24.md)
 
-## Podgląd
+## Aktualny podgląd — 29 października 2026
 
-![Demo — wspólne menu i jednostki](docs/demo-menu.png)
+Zrzuty przedstawiają **pełną lokalną aplikację**, a nie starszą paczkę demo z 24 października.
 
-![Start — poziom licealny](docs/welcome-secondary.png)
+![Aktualne menu startowe Math Validatora](docs/math-start-current.png)
 
-![Wirtualny asystent — pomoc do wybranego kąta](docs/virtual-assistant-triangle.png)
+<details>
+<summary>Geometria: poziom licealny, trójkąt 3–4–5, kąty i lekcje — rozwiń pełny zrzut</summary>
 
-[Przebieg prac i ograniczenia zakresu](docs/WIRTUALNY_ASYSTENT_I_NAUCZYCIEL_2026-10-24.md) · [README sprzed przebudowy](docs/archiwum/README_before_virtual_assistant_2026-10-24.md) · [Wcześniejsza integracja pamięci](docs/PAMIEC_TSI_2026-10-24.md)
+![Aktualny panel geometrii z wynikiem i dodatkowymi zależnościami](docs/math-geometry-current.png)
+
+</details>
+
 
 [README sprzed aktualizacji 29 października](docs/archiwum/README_przed_2026-10-29.md).
