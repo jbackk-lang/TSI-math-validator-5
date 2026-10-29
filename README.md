@@ -1,6 +1,21 @@
 # TSI-math-validator-5
 
-**Stan: 24 października 2026.** Lokalny warsztat matematyki: obliczenia, rysunki, sprawdzanie rozwiązań i nauka z wirtualnym asystentem TSI.
+**Stan wersji lokalnej: 29 października 2026.** Lokalny warsztat matematyki: obliczenia, rysunki, sprawdzanie rozwiązań i nauka z wirtualnym asystentem TSI.
+
+## Potwierdzony zakres aktualizacji — 29 października 2026
+
+Pełna wersja lokalna obejmuje warsztat równań i funkcji, całki, geometrię i bryły, jednostki, logikę, audyt oraz pomocnika TSI. Geometria ma poziomy podstawowy, licealny i akademicki; dodatkowe zależności i pola formularza zależą od figury. Obliczenia sprawdzają narzędzia matematyczne. Publiczne demo z 24 października jest osobnym wydaniem bez bieżącego kodu i wag TSI.
+
+Dzisiejszy [sprawdzian modułu sygnałowego TSI](docs/RAPORT_SYGNALY_2026-10-29.md) dotyczy kształtu próbek i temperatury maszyny. Nie jest oceną poprawności całek, równań ani pracy nauczyciela i nie podmienia modelu w walidatorze. Swobodna rozmowa TSI nie osiągnęła wymaganego poziomu. **Ta aktualizacja dokumentacji nie przebudowuje demo ani ZIP-ów.**
+
+
+## Poziomy geometrii i zadania nauczyciela
+
+W geometrii wybierz **Podstawowy**, **Licealny** lub **Akademicki**. Dodatkowe pola zależą od figury i wybranej zależności. Poziom licealny udostępnia m.in. kąty z boków, pole z kąta, wysokości ze znanego pola, przekątne i kąty przekątnych. Akademicki dodaje obliczanie pola lub objętości przez całkę dla 16 modeli figur i brył. Wynik zawiera wzór, podstawienie lub granice całkowania, wartość dokładną, przybliżenie i jednostkę.
+
+W sekcji **Zadania od nauczyciela** przycisk prowadzi do chronionego panelu edycji. Panel pokazuje istniejące zadanie w tabeli: treść, wskazówki, odpowiedź i parametry. **Użyj jako wzoru nowego zadania** kopiuje je do formularza; dopiero **Zapisz zadanie** tworzy nowy wpis. Odnośniki pozwalają wrócić do odpowiedniego działu i otworzyć konkretne zadanie.
+
+Te zmiany dotyczą pełnej wersji lokalnej. Opublikowane niżej demo z 24 października pozostaje osobnym wydaniem.
 
 ## Pobierz demo — Windows x64
 
@@ -66,3 +81,5 @@ Pełna wersja z modelem TSI pozostaje lokalna. Publiczne demo zawiera narzędzia
 ![Wirtualny asystent — pomoc do wybranego kąta](docs/virtual-assistant-triangle.png)
 
 [Przebieg prac i ograniczenia zakresu](docs/WIRTUALNY_ASYSTENT_I_NAUCZYCIEL_2026-10-24.md) · [README sprzed przebudowy](docs/archiwum/README_before_virtual_assistant_2026-10-24.md) · [Wcześniejsza integracja pamięci](docs/PAMIEC_TSI_2026-10-24.md)
+
+[README sprzed aktualizacji 29 października](docs/archiwum/README_przed_2026-10-29.md).
