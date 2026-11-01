@@ -1,13 +1,24 @@
 # TSI-math-validator-5
 
-**Stan wersji lokalnej: 29 października 2026.** Lokalny warsztat matematyki: obliczenia, rysunki, sprawdzanie rozwiązań i nauka z wirtualnym asystentem TSI.
+**Stan wersji lokalnej: 1 listopada 2026.** Lokalny warsztat matematyki: obliczenia, rysunki, sprawdzanie rozwiązań i nauka z wirtualnym asystentem TSI.
 
-## Potwierdzony zakres aktualizacji — 29 października 2026
+## Podłączone TSI — 1 listopada 2026
 
-Pełna wersja lokalna obejmuje warsztat równań i funkcji, całki, geometrię i bryły, jednostki, logikę, audyt oraz pomocnika TSI. Geometria ma poziomy podstawowy, licealny i akademicki; dodatkowe zależności i pola formularza zależą od figury. Obliczenia sprawdzają narzędzia matematyczne. Publiczne demo z 24 października jest osobnym wydaniem bez bieżącego kodu i wag TSI.
+Walidator korzysta ze wspólnej lokalnej instalacji **TSI z generatorem odpowiedzi 3**. Pomocnik układa wypowiedzi z odczytanych ról, zachowuje zaprzeczenia i zależności oraz obsługuje kolejne pytania o podany materiał. Rozpoznane dane i wzory nadal trafiają do narzędzi matematycznych walidatora.
 
-Dzisiejszy [sprawdzian modułu sygnałowego TSI](docs/RAPORT_SYGNALY_2026-10-29.md) dotyczy kształtu próbek i temperatury maszyny. Nie jest oceną poprawności całek, równań ani pracy nauczyciela i nie podmienia modelu w walidatorze. Swobodna rozmowa TSI nie osiągnęła wymaganego poziomu. **Ta aktualizacja dokumentacji nie przebudowuje demo ani ZIP-ów.**
+Rozmowa i aktywne zadanie mają jawne pierwszeństwo. Nowy tekst użytkownika i pytania o niego trafiają do rozmowy TSI. **Wskazówka, wybrany wymiar i polecenie nauczyciela** odnoszą się do bieżącego zadania. Zmiana zadania lub wskazanego pola zmienia zakres, żeby poprzednia rozmowa nie przejęła pytania o nowy wzór.
 
+**Próba podłączenia: 11/11.** Obejmuje wieloturową rozmowę, sprawdzenie wersji, przeładowanie z zachowaniem kontekstu, wybraną wysokość **7,25 cm**, logikę Kleene’a (**F ∧ U = F**, **T ∧ U = U**) i nową rozmowę. Kontrola obejmuje odrębnie transport TSI, dane zadania i wyniki narzędzi.
+
+Dodatkowo działający panel przeszedł **8/8 prób HTTP**: rozmowę, wybraną wielkość, całkę oznaczoną **∫₀¹ x² dx = 1/3**, przeliczenie **250 cm = 5/2 m** i trzeci kąt trójkąta **90°** przy danych 30° i 60°. Osobna próba warsztatu potwierdziła **x²−64 = 0 → −8, 8**. Obejmuje to także geometrię i jednostki, poza zadaniami akademickimi.
+
+Przykład rozmowy: `Iga czyta list, bo Leon otwiera okno. Co robi Iga?` → **Iga czyta list.** Po `Dlaczego?` pomocnik układa zdanie z przyczyną. Po wybraniu pola wysokości wyjaśnia wskazaną wysokość i jej jednostkę.
+
+Gotowa wypowiedź jest sprawdzana pod względem ról, obiektów, negacji i relacji względem materiału. Gałąź K otrzymuje także propozycję odpowiedzi; jej stan jest osobną obserwacją, nie jedynym kryterium poprawności. Obliczenia, geometria, jednostki i tablice logiki zachowują swoje narzędzia.
+
+**Ta aktualizacja dotyczy pełnej lokalnej aplikacji.** Publiczne demo i wcześniej wydane ZIP-y pozostają osobnymi wydaniami. Nowy kod, wagi i pamięć TSI nie są publikowane.
+
+[Zakres wspólnego TSI](https://github.com/jbackk-lang/AI-SI-TSI) · [Historia poprzedniego README](docs/archiwum/README_przed_TSI3_20261101.md).
 
 ## Poziomy geometrii i zadania nauczyciela
 
