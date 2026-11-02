@@ -2,7 +2,9 @@
 
 **Stan: 2 listopada 2026 — pełna wersja lokalna.** Warsztat nauki matematyki z obliczeniami, rysunkami, sprawdzaniem odpowiedzi i kontekstowym pomocnikiem TSI. Nauka jest pierwszym trybem; ustawienia i administracja są oddzielone od materiału ucznia.
 
-![Słownik: wyszukiwanie po lewej, opis po prawej i pomocnik TSI](docs/ui-slownik-20261102.jpg)
+![Szafa dydaktyczna: tematy, lekcje i edytowalne klocki](docs/ui-szafa-20261102.jpg)
+
+![Stanowiska uczniów i postęp w bieżącym temacie — dane testowe](docs/ui-klasa-postepy-20261102.jpg)
 
 ## Wspólny pulpit nauki
 
@@ -51,9 +53,19 @@ Chroniony panel otwiera się pod obszarem pracy po podaniu klucza nauczyciela. Z
 
 Eksport banku nie zawiera kont, haseł, wyników uczniów, kodu ani pamięci TSI. Wycofane zadania i zablokowane konta zachowują dane.
 
+## Klocki dydaktyczne i wspólna sala
+
+Nowy bank układa materiał jako **dział → temat → lekcja → klocki**. Przygotowano **80 klocków z 14 istniejących przykładów i audytu dla 10 działów**. Nauczyciel edytuje treść, dodaje własny materiał, kopiuje klocek, ustawia kolejność, poziomy 1–15, priorytet i widoczność. Treść i dane zajmują lewą kolumnę, objaśnienia i ujawniane rozwiązanie prawą. Start, przelicznik jednostek i słownik pozostają stałe. Specjalistyczne formularze obliczeń nadal obsługują swoje działy; przeniesienie wszystkich dawnych treści do nowego banku nie jest jeszcze zakończone.
+
+**Opcjonalny serwer klasy:** jeden komputer przechowuje konta, materiały i postępy, a wiele stanowisk korzysta z przeglądarki. Identyfikator stanowiska jest oddzielony od loginu i adresu IP. Nauczyciel widzi bieżący dział, poziom, poprawne odpowiedzi / ocenione próby, dni nauki i czas ostatniej oceny. Może otworzyć temat na wybranym stanowisku; limit ucznia pozostaje aktywny. Odświeżanie co 15 sekund nie przerywa edycji polecenia. To podgląd ćwiczeń, nie zabezpieczony system egzaminacyjny.
+
+Do pracy w szkolnej sieci wymagane są **adres serwera, zaufany certyfikat HTTPS i konfiguracja dostępu przez administratora**. Tryb lokalny pozostaje domyślny. Program nie otwiera sam zapory. [Instrukcja serwera klasy](docs/SIEC_SZKOLNA.md).
+
+Test wspólnego serwera na dwóch niezależnych klientach potwierdził osobne stanowiska i postępy, ograniczenie poziomu, uprawnienia nauczyciela i dostarczenie polecenia tylko wybranemu stanowisku. Nie przeprowadzono jeszcze odbioru na fizycznych komputerach szkolnych ani pomiaru obciążenia całej klasy.
+
 ## Sprawdzenie aktualizacji
 
-- **6 testów integracyjnych modułu edukacyjnego — zaliczone:** rozdzielenie kont i wyników, uprawnienia, zmiana danych i poziomu, unieważnianie sesji, materiały, indywidualne wprowadzenie oraz eksport/import banku z załącznikami i kontrolą duplikatów.
+- **24 testy edukacji, klocków i stanowisk — zaliczone:** rozdzielenie kont i wyników, uprawnienia, zmiana danych i poziomu, unieważnianie sesji, materiały, indywidualne wprowadzenie oraz eksport/import banku z załącznikami i kontrolą duplikatów.
 - Zapisano **105 kontroli widoków poziomów**. Pełny przegląd wszystkich kombinacji działu, poziomu i języka jest kontynuowany; nie jest oznaczony jako zakończony.
 - W działającym słowniku potwierdzono wynik dla równania kwadratowego, prawą kolumnę, opis PL/EN i widoczność otwartego pomocnika nad menu.
 
@@ -63,14 +75,8 @@ Wcześniejsze sprawdzenia obliczeń i podłączenia TSI są opisane w [archiwum 
 
 Pełna aplikacja pracuje lokalnie w przeglądarce. Dostęp klasowy przez sieć i centralne zarządzanie wieloma stanowiskami są kolejnym etapem; obecne konta i klasy przygotowują dane do tego trybu.
 
-[Publiczne demo Windows x64 — wydanie z 2 listopada](https://github.com/jbackk-lang/TSI-math-validator-5/releases/tag/v2026.11.02-demo.1) · [Pobierz ZIP](https://github.com/jbackk-lang/TSI-math-validator-5/releases/download/v2026.11.02-demo.1/TSI-Math-Validator-DEMO-Windows-x64-2026-11-02.zip)
+[Publiczne demo Windows x64 — wydanie z 2 listopada](https://github.com/jbackk-lang/TSI-math-validator-5/releases/tag/v2026.11.02-demo.2) · [Pobierz ZIP](https://github.com/jbackk-lang/TSI-math-validator-5/releases/download/v2026.11.02-demo.2/TSI-Math-Validator-DEMO-Windows-x64-2026-11-02-ui2.zip)
 
-Demo: **17.47 MB ZIP**, około **57.45 MB po rozpakowaniu** (MB = 1 000 000 bajtów). Rozpakuj cały katalog i uruchom **URUCHOM.bat**; **ZAMKNIJ.bat** zamyka tę instancję. Python jest dołączony. Demo zawiera nowy interfejs, konta uczniów i panel nauczyciela. Konta, hasła i dane tworzy użytkownik lokalnie po uruchomieniu. Sieć TSI, jej wagi, pamięć, rozmowa i trening nie są częścią paczki.
+Demo: **18.38 MB ZIP**, około **60.32 MB po rozpakowaniu** (MB = 1 000 000 bajtów). Rozpakuj cały katalog i uruchom **URUCHOM.bat**; **ZAMKNIJ.bat** zamyka tę instancję. Python jest dołączony. Demo zawiera nowy interfejs, konta uczniów i panel nauczyciela. Konta, hasła i dane tworzy użytkownik lokalnie po uruchomieniu. Sieć TSI, jej wagi, pamięć, rozmowa i trening nie są częścią paczki.
 
 Repozytorium publiczne udostępnia dokumentację i wydane demo. **Aktualny kod, wagi i prywatna pamięć TSI pozostają lokalne.** Informacje o wspólnym TSI: [AI-SI-TSI](https://github.com/jbackk-lang/AI-SI-TSI).
-
-### Aktualizacja demo — 2 listopada
-
-Kolor działu przechodzi na jaśniejsze podmenu. Poziom zmienia widok zadań: geometria licealna udostępnia kąty, wysokości i przekątne, akademicka całkowanie pola i objętości. Podgląd danych jest po prawej. Edytor nauczyciela zawiera 16 przykładów do wczytania jako wzór własnego zadania.
-
-Paczka korzysta z jednego utrzymywanego procesu narzędzi matematycznych, aby nie ładować bibliotek od nowa dla każdego obliczenia. Kontrola wydania obejmuje start dołączonym Pythonem, strony i zasoby, rozwiązanie x²−64 oraz import modułów obliczeniowych. Pełny audyt wszystkich widoków i poziomów PL/EN nadal trwa.
