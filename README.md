@@ -63,8 +63,14 @@ Wcześniejsze sprawdzenia obliczeń i podłączenia TSI są opisane w [archiwum 
 
 Pełna aplikacja pracuje lokalnie w przeglądarce. Dostęp klasowy przez sieć i centralne zarządzanie wieloma stanowiskami są kolejnym etapem; obecne konta i klasy przygotowują dane do tego trybu.
 
-[Publiczne demo Windows x64 — wydanie z 24 października](https://github.com/jbackk-lang/TSI-math-validator-5/releases/tag/v2026.10.24-demo.1) · [Pobierz ZIP](https://github.com/jbackk-lang/TSI-math-validator-5/releases/download/v2026.10.24-demo.1/TSI-Math-Validator-DEMO-Windows-x64-2026-10-24.zip)
+[Publiczne demo Windows x64 — wydanie z 2 listopada](https://github.com/jbackk-lang/TSI-math-validator-5/releases/tag/v2026.11.02-demo.1) · [Pobierz ZIP](https://github.com/jbackk-lang/TSI-math-validator-5/releases/download/v2026.11.02-demo.1/TSI-Math-Validator-DEMO-Windows-x64-2026-11-02.zip)
 
-Demo: **17,34 MB ZIP**, około **57,01 MB po rozpakowaniu** (MB = 1 000 000 bajtów). Rozpakuj cały katalog i uruchom **URUCHOM.bat**; **ZAMKNIJ.bat** zamyka tę instancję. Python jest dołączony. Wydanie demo jest wcześniejsze od opisanego tu nowego interfejsu i kont uczniów.
+Demo: **17.47 MB ZIP**, około **57.45 MB po rozpakowaniu** (MB = 1 000 000 bajtów). Rozpakuj cały katalog i uruchom **URUCHOM.bat**; **ZAMKNIJ.bat** zamyka tę instancję. Python jest dołączony. Demo zawiera nowy interfejs, konta uczniów i panel nauczyciela. Konta, hasła i dane tworzy użytkownik lokalnie po uruchomieniu. Sieć TSI, jej wagi, pamięć, rozmowa i trening nie są częścią paczki.
 
 Repozytorium publiczne udostępnia dokumentację i wydane demo. **Aktualny kod, wagi i prywatna pamięć TSI pozostają lokalne.** Informacje o wspólnym TSI: [AI-SI-TSI](https://github.com/jbackk-lang/AI-SI-TSI).
+
+### Aktualizacja demo — 2 listopada
+
+Kolor działu przechodzi na jaśniejsze podmenu. Poziom zmienia widok zadań: geometria licealna udostępnia kąty, wysokości i przekątne, akademicka całkowanie pola i objętości. Podgląd danych jest po prawej. Edytor nauczyciela zawiera 16 przykładów do wczytania jako wzór własnego zadania.
+
+Paczka korzysta z jednego utrzymywanego procesu narzędzi matematycznych, aby nie ładować bibliotek od nowa dla każdego obliczenia. Kontrola wydania obejmuje start dołączonym Pythonem, strony i zasoby, rozwiązanie x²−64 oraz import modułów obliczeniowych. Pełny audyt wszystkich widoków i poziomów PL/EN nadal trwa.
