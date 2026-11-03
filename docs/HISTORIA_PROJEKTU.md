@@ -186,3 +186,8 @@ Poszerzono i aktywowano właściwy WordVectorGeometryCore H256 → H512, zachowu
 ## 18 października 2026 — warsztat nauki, całki i zarządzanie poprawkami
 
 Dodano rozpoznane dane, podpowiedzi, kontrolę własnej pracy i dziedziny funkcji pierwotnej, historię lokalną z odtwarzaniem ilustracji oraz powtórki. Uporządkowano przykłady i zwinięto ustawienia zaawansowane. Rozszerzono edukacyjne całki, wspólne rysunki, ochronę banku hasłem i cofanie zmian z kopii. Przygotowano ograniczony prototyp VQLS na symulatorze. Najnowsza regresja warsztatu: 89/89; przebieg użytkownika dodatkowo sprawdzony w przeglądarce. Szczegóły znajdują się w dokumentach z datą 2026-10-18.
+
+
+## 3 listopada 2026 — rozmowa, narzędzia i podłączenie aplikacji
+
+Jednostki, audyt równań, zadania łączone i obsługa korekt zostały podłączone do wspólnego TSI oraz obu aplikacji. Naprawiono przechwycenie pytania o przyczynę przez moduł obliczeń. Sprawdzono 15/15 prób integracji oraz 7/7 HTTP w każdej aplikacji. Wdrożony moduł odpowiedzi: 5217; najnowszy zapis większej sieci treningowej: 5664, poza aplikacjami. Dokładne wyniki etapów, ograniczenia i przebieg opisano w [raporcie](INTEGRACJA_TSI_20261103.md).

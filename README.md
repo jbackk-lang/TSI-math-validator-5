@@ -1,6 +1,26 @@
 # TSI-math-validator-5
 
-**Stan: 2 listopada 2026 — pełna wersja lokalna.** Warsztat nauki matematyki z obliczeniami, rysunkami, sprawdzaniem odpowiedzi i kontekstowym pomocnikiem TSI. Nauka jest pierwszym trybem; ustawienia i administracja są oddzielone od materiału ucznia.
+**Stan: 3 listopada 2026 — pełna wersja lokalna.** Warsztat nauki matematyki z obliczeniami, rysunkami, sprawdzaniem odpowiedzi i kontekstowym pomocnikiem TSI. Nauka jest pierwszym trybem; ustawienia i administracja są oddzielone od materiału ucznia.
+
+## Wspólne TSI — 3 listopada 2026
+
+Lokalne aplikacje korzystają z tej samej instalacji TSI, w wersji obsługi **`2026-11-03-consumers-11`**. Rozmowy i pamięć użytkowników są zapisywane osobno w każdej aplikacji. Zmiana panelu lub danych wybranego zadania unieważnia poprzednie aktywne dane matematyczne; przeładowanie modułu zachowuje zapisany kontekst tej samej rozmowy.
+
+Pomocnik przelicza jednostki, sprawdza kroki równań i łączy narzędzia w zadaniach o ruchu jednostajnym. Potrafi zmienić podaną wielkość i ponownie obliczyć wynik. Audyt rozwiązania ucznia uwzględnia dane zadania oraz dziedzinę, wskazując pierwszy niezgodny wiersz. Osobno zachowano pytania o podany tekst i przyczynę opisanej czynności.
+
+**Podłączenie: 15/15 prób w tej aplikacji; dodatkowo 7/7 przez jej działający panel HTTP.** Sprawdzono jednostki, zadanie 18 km/h przez 40 minut, zmianę czasu na 25 minut, audyt ucznia, PL/EN, kąty podawane osobno, rozdzielenie profili, zmianę kontekstu i odczyt po ponownym uruchomieniu procesu rozmowy.
+
+Przykładowe polecenia:
+
+```text
+Przelicz 72 km/h na m/s.
+Rowerzysta jedzie 18 km/h przez 40 minut. Jaką drogę pokona?
+Zmień czas na 25 minut.
+```
+
+Wyniki: **20 m/s**, następnie **12 km**, po zmianie **7,5 km**. Prośbę „Sprawdź moje rozwiązanie:” można uzupełnić równaniami w kolejnych wierszach. [Szczegóły aktualizacji](docs/INTEGRACJA_TSI_20261103.md) · [Zakres wspólnego TSI](https://github.com/jbackk-lang/AI-SI-TSI).
+
+Aktualizacja dotyczy działającej instalacji lokalnej. Wagi modułu odpowiedzi pozostają na kroku **5217**; większa sieć treningowa nie została wdrożona. Dotychczasowe demo i paczki portable zachowują wersje podane przy wydaniach.
 
 ![Szafa dydaktyczna: tematy, lekcje i edytowalne klocki](docs/ui-szafa-20261102.jpg)
 
@@ -63,7 +83,7 @@ Do pracy w szkolnej sieci wymagane są **adres serwera, zaufany certyfikat HTTPS
 
 Test wspólnego serwera na dwóch niezależnych klientach potwierdził osobne stanowiska i postępy, ograniczenie poziomu, uprawnienia nauczyciela i dostarczenie polecenia tylko wybranemu stanowisku. Nie przeprowadzono jeszcze odbioru na fizycznych komputerach szkolnych ani pomiaru obciążenia całej klasy.
 
-## Sprawdzenie aktualizacji
+## Sprawdzenie interfejsu z 2 listopada
 
 - **24 testy edukacji, klocków i stanowisk — zaliczone:** rozdzielenie kont i wyników, uprawnienia, zmiana danych i poziomu, unieważnianie sesji, materiały, indywidualne wprowadzenie oraz eksport/import banku z załącznikami i kontrolą duplikatów.
 - Zapisano **105 kontroli widoków poziomów**. Pełny przegląd wszystkich kombinacji działu, poziomu i języka jest kontynuowany; nie jest oznaczony jako zakończony.
@@ -80,3 +100,5 @@ Pełna aplikacja pracuje lokalnie w przeglądarce. Dostęp klasowy przez sieć i
 Demo: **18.38 MB ZIP**, około **60.32 MB po rozpakowaniu** (MB = 1 000 000 bajtów). Rozpakuj cały katalog i uruchom **URUCHOM.bat**; **ZAMKNIJ.bat** zamyka tę instancję. Python jest dołączony. Demo zawiera nowy interfejs, konta uczniów i panel nauczyciela. Konta, hasła i dane tworzy użytkownik lokalnie po uruchomieniu. Sieć TSI, jej wagi, pamięć, rozmowa i trening nie są częścią paczki.
 
 Repozytorium publiczne udostępnia dokumentację i wydane demo. **Aktualny kod, wagi i prywatna pamięć TSI pozostają lokalne.** Informacje o wspólnym TSI: [AI-SI-TSI](https://github.com/jbackk-lang/AI-SI-TSI).
+
+[README sprzed podłączenia z 3 listopada](docs/archiwum/README_przed_integracja_20261103.md).
