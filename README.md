@@ -1,6 +1,13 @@
 # TSI-math-validator-5
 
-**Stan: 3 listopada 2026 — pełna wersja lokalna.** Warsztat nauki matematyki z obliczeniami, rysunkami, sprawdzaniem odpowiedzi i kontekstowym pomocnikiem TSI. Nauka jest pierwszym trybem; ustawienia i administracja są oddzielone od materiału ucznia.
+## Aktualizacja 4 listopada 2026
+
+TSI oblicza datę i godzinę przyjazdu, zachowuje kontekst po korekcie godziny i liczy dni robocze według wybranego kalendarza. W Zadaniach tekstowych → Lekcje nauczyciela są ćwiczenia ruchu na dwóch odcinkach, gęstości i przepływu z przypisaniem do poziomów.
+
+[Uruchomienie i weryfikacja portable](docs/PORTABLE_20261104.md)
+
+
+**Stan: 4 listopada 2026 — pełna wersja lokalna.** Warsztat nauki matematyki z obliczeniami, rysunkami, sprawdzaniem odpowiedzi i kontekstowym pomocnikiem TSI. Nauka jest pierwszym trybem; ustawienia i administracja są oddzielone od materiału ucznia.
 
 ## Wspólne TSI — 3 listopada 2026
 
@@ -20,7 +27,7 @@ Zmień czas na 25 minut.
 
 Wyniki: **20 m/s**, następnie **12 km**, po zmianie **7,5 km**. Prośbę „Sprawdź moje rozwiązanie:” można uzupełnić równaniami w kolejnych wierszach. [Szczegóły aktualizacji](docs/INTEGRACJA_TSI_20261103.md) · [Zakres wspólnego TSI](https://github.com/jbackk-lang/AI-SI-TSI).
 
-Aktualizacja dotyczy działającej instalacji lokalnej. Wagi modułu odpowiedzi pozostają na kroku **5217**; większa sieć treningowa nie została wdrożona. Pełne lokalne portable i ZIP-y zaktualizowano 3 listopada. [Rozmiary i sprawdzenie paczek](docs/PORTABLE_20261103.md). Publiczne demo pozostaje osobnym wydaniem.
+Aktualizacja dotyczy działającej instalacji lokalnej. Wagi modułu odpowiedzi pozostają na kroku **5217**; większa sieć treningowa nie została wdrożona. [Poprzednie wydanie portable z 3 listopada](docs/PORTABLE_20261103.md). Publiczne demo pozostaje osobnym wydaniem.
 
 ![Szafa dydaktyczna: tematy, lekcje i edytowalne klocki](docs/ui-szafa-20261102.jpg)
 
