@@ -1,5 +1,16 @@
 # TSI-math-validator-5
 
+## Math Walidator w skrócie
+
+Math Walidator to lokalny warsztat do nauki matematyki. Uczeń może obliczyć wynik, zobaczyć wykres lub rysunek i sprawdzić własne rozwiązanie. Nauczyciel może przygotować zadania i przypisać je do poziomu ucznia.
+
+- **Równania i funkcje.** Analiza wzoru, dziedzina, miejsca zerowe i wykres. Własne przykłady można zapisywać w bibliotece.
+- **Geometria.** Wprowadź współrzędne trójkąta lub wczytaj przykład. Przycisk „Analizuj krok po kroku” pokazuje obliczenia pola, obwodu, wysokości i charakterystycznych punktów. W czacie można poprawić współrzędne i porównać wyniki.
+- **Analiza matematyczna.** Wybrane całki, ekstrema, szeregi potęgowe i rozwinięcia Taylora. W obsługiwanych zadaniach całkowania numerycznego TSI odróżnia szacunek błędu od gwarantowanej granicy.
+- **„Zapytaj TSI”.** Pomocnik dopasowuje objaśnienie obsługiwanych zadań do poziomu podstawówki, liceum lub studiów. Przy sprawdzaniu rozwiązania wskazuje pierwszy wykryty błąd i pomaga wrócić do tego kroku.
+
+Zakres opisuje lokalną instalację współpracującą ze wspólnym modułem TSI. W sprawdzianie etapu 118 Walidator i TSI zwróciły zgodne wyniki dla **6/6 nowych zestawów współrzędnych**. [Zakres i wyniki TSI](https://github.com/jbackk-lang/AI-SI-TSI#etap-118--podsumowanie-cyklu-geometrii-trójkąta)
+
 ## Aktualizacja 4 listopada 2026
 
 TSI oblicza datę i godzinę przyjazdu, zachowuje kontekst po korekcie godziny i liczy dni robocze według wybranego kalendarza. W Zadaniach tekstowych → Lekcje nauczyciela są ćwiczenia ruchu na dwóch odcinkach, gęstości i przepływu z przypisaniem do poziomów.
