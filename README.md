@@ -21,7 +21,7 @@ Interfejs PL/EN oferuje 15 poziomów widoku, od podstawówki po studia. Nauczyci
 
 | Wydanie | Gdzie w zestawie 1.3 | Rozmiar | Jak zacząć |
 |---|---|---:|---|
-| Demo | `Demo/Walidator` | ok. 3 KB | Otwórz `START.html` w przeglądarce. Wypróbujesz równanie kwadratowe i obliczenie ceny po rabacie. |
+| Demo | `Demo/Walidator` | ok. 3 KB | Pobierz [START.html](https://raw.githubusercontent.com/jbackk-lang/TSI-math-validator-5/main/demo/1.3/START.html) i otwórz w przeglądarce. Wypróbujesz równanie kwadratowe i obliczenie ceny po rabacie. |
 | Pełne | `Pełne/Walidator` | ok. 4,57 GB (4,25 GiB) | Skopiuj cały folder na dysk lokalny, najlepiej SSD, i uruchom `START.bat`. |
 
 Rozmiary dotyczą plików w folderach wydania 1.3. Pełna paczka zawiera Pythona i modele. Panel otwiera się w przeglądarce na stronie **Start**. Kliknij figurę, aby przejść do działu. Po zakończeniu pracy serwer można zatrzymać przez `ZATRZYMAJ.bat`.
@@ -41,6 +41,8 @@ Rozmiary dotyczą plików w folderach wydania 1.3. Pełna paczka zawiera Pythona
 
 ## Dostępność
 
-Powyższa tabela opisuje zestaw lokalny 1.3. Na GitHubie dostępne jest osobne, wcześniejsze demo Windows x64. [Publiczne wydania na GitHubie](https://github.com/jbackk-lang/TSI-math-validator-5/releases)
+Aktualne demo 1.3 można pobrać jako pojedynczy plik HTML. Zapisz go i otwórz w przeglądarce. [Pobierz demo 1.3](https://raw.githubusercontent.com/jbackk-lang/TSI-math-validator-5/main/demo/1.3/START.html)
+
+Pełna wersja 1.3 jest dostępna w lokalnym zestawie.
 
 [Archiwalny opis i wcześniejsze wydania](docs/README-wydania-do-2026-11-04.md)
